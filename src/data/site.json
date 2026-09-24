@@ -1,0 +1,364 @@
+{
+  "brand": {
+    "name": "KENNY'S",
+    "legalName": "Kenny's Barbering Co.",
+    "fullName": "Kenny's Barbering Co.",
+    "tagline": "A cut above, since 1998.",
+    "established": "1998",
+    "baseUrl": "https://sigz-dev.github.io/kennys-barbering-co/",
+    "repoName": "kennys-barbering-co"
+  },
+
+  "contact": {
+    "addressLine": "Shop 4, 14 Fourth Avenue",
+    "suburb": "Parkhurst",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postalCode": "2193",
+    "country": "South Africa",
+    "countryCode": "ZA",
+    "addressFull": "Shop 4, 14 Fourth Avenue, Parkhurst, Johannesburg, 2193, South Africa",
+    "phoneDisplay": "+27 11 447 8820",
+    "phoneHref": "+27114478820",
+    "whatsappDisplay": "+27 82 555 0147",
+    "whatsappHref": "27825550147",
+    "email": "hello@kennys.co.za",
+    "lat": -26.1417,
+    "lon": 28.0186,
+    "timezone": "Africa/Johannesburg",
+    "utcOffsetHours": 2,
+    "currency": "ZAR",
+    "currencySymbol": "R"
+  },
+
+  "social": [
+    { "name": "Instagram", "handle": "@kennysbarbering", "url": "https://www.instagram.com/" },
+    { "name": "Facebook", "handle": "Kenny's Barbering Co.", "url": "https://www.facebook.com/" },
+    { "name": "TikTok", "handle": "@kennysbarbering", "url": "https://www.tiktok.com/" }
+  ],
+
+  "hours": [
+    { "day": "Monday",    "short": "Mon", "dow": 1, "closed": true,  "open": null,    "close": null },
+    { "day": "Tuesday",   "short": "Tue", "dow": 2, "closed": false, "open": "09:00", "close": "19:00" },
+    { "day": "Wednesday", "short": "Wed", "dow": 3, "closed": false, "open": "09:00", "close": "19:00" },
+    { "day": "Thursday",  "short": "Thu", "dow": 4, "closed": false, "open": "09:00", "close": "19:00" },
+    { "day": "Friday",    "short": "Fri", "dow": 5, "closed": false, "open": "09:00", "close": "19:00" },
+    { "day": "Saturday",  "short": "Sat", "dow": 6, "closed": false, "open": "08:00", "close": "17:00" },
+    { "day": "Sunday",    "short": "Sun", "dow": 0, "closed": false, "open": "10:00", "close": "15:00" }
+  ],
+
+  "serviceGroups": [
+    {
+      "id": "cuts",
+      "title": "Cuts",
+      "blurb": "Every cut opens with a consultation and closes with a hot towel and finish.",
+      "services": [
+        {
+          "slug": "signature-cut",
+          "name": "Signature Cut",
+          "desc": "Our house cut. Consultation, clipper and scissor work, hot towel, styled and finished.",
+          "price": 280,
+          "duration": 45,
+          "image": "service-signature",
+          "popular": true
+        },
+        {
+          "slug": "skin-fade",
+          "name": "Skin Fade",
+          "desc": "A seamless blend down to the skin, sharp line-up and precision detailing at the neck.",
+          "price": 320,
+          "duration": 45,
+          "image": "service-fade",
+          "popular": true
+        },
+        {
+          "slug": "scissor-cut",
+          "name": "Scissor Cut",
+          "desc": "Scissor-over-comb throughout. Soft, textured and grown-in — no clipper lines.",
+          "price": 300,
+          "duration": 45,
+          "image": "service-scissor",
+          "popular": false
+        },
+        {
+          "slug": "student-cut",
+          "name": "Student Cut",
+          "desc": "Full Signature Cut at a student rate. Valid student card required. Tuesday to Friday.",
+          "price": 220,
+          "duration": 45,
+          "image": "service-student",
+          "popular": false
+        },
+        {
+          "slug": "kids-cut",
+          "name": "Kids Cut",
+          "desc": "Under 12s. Patient, unhurried, and a booster seat for the little ones. No fuss.",
+          "price": 180,
+          "duration": 30,
+          "image": "service-kids",
+          "popular": false
+        }
+      ]
+    },
+    {
+      "id": "beard",
+      "title": "Beard & Shave",
+      "blurb": "Straight razor work, hot towels and balm — the part of the ritual worth slowing down for.",
+      "services": [
+        {
+          "slug": "beard-sculpt",
+          "name": "Beard Sculpt",
+          "desc": "Shaped, lined and trimmed to your face. Hot towel, beard oil and balm to finish.",
+          "price": 180,
+          "duration": 30,
+          "image": "service-beard",
+          "popular": true
+        },
+        {
+          "slug": "hot-towel-shave",
+          "name": "Hot Towel Shave",
+          "desc": "The full traditional shave. Pre-shave oil, hot towels, straight razor, cold towel, balm.",
+          "price": 260,
+          "duration": 45,
+          "image": "service-shave",
+          "popular": true
+        },
+        {
+          "slug": "head-shave",
+          "name": "Head Shave",
+          "desc": "Clean razor head shave with hot towels, finished with a soothing scalp balm.",
+          "price": 240,
+          "duration": 30,
+          "image": "service-headshave",
+          "popular": false
+        }
+      ]
+    },
+    {
+      "id": "packages",
+      "title": "Packages",
+      "blurb": "Our most-booked combinations, priced below the sum of their parts.",
+      "services": [
+        {
+          "slug": "the-full-service",
+          "name": "The Full Service",
+          "desc": "Signature Cut, Beard Sculpt and a Hot Towel Shave finish. Ninety minutes in the chair, and a complimentary drink.",
+          "price": 580,
+          "duration": 90,
+          "image": "service-full",
+          "popular": true,
+          "saving": 140
+        },
+        {
+          "slug": "cut-and-beard",
+          "name": "Cut & Beard",
+          "desc": "Signature Cut paired with a full Beard Sculpt. The standing appointment most of our regulars keep.",
+          "price": 420,
+          "duration": 75,
+          "image": "service-cutbeard",
+          "popular": false,
+          "saving": 40
+        },
+        {
+          "slug": "father-and-son",
+          "name": "Father & Son",
+          "desc": "One Signature Cut and one Kids Cut, side by side in adjacent chairs. Booked as a single appointment.",
+          "price": 420,
+          "duration": 75,
+          "image": "service-fatherson",
+          "popular": false,
+          "saving": 40
+        }
+      ]
+    },
+    {
+      "id": "extras",
+      "title": "Finishing Touches",
+      "blurb": "Quick work between appointments. Walk in if a chair is free, or add one to a booking.",
+      "services": [
+        {
+          "slug": "line-up",
+          "name": "Line-Up",
+          "desc": "Edges, hairline and neck sharpened up. Keeps a cut looking fresh into week three.",
+          "price": 120,
+          "duration": 15,
+          "image": "service-lineup",
+          "popular": false
+        },
+        {
+          "slug": "grey-blending",
+          "name": "Grey Blending",
+          "desc": "Softens the grey rather than covering it. Subtle, natural, and grows out cleanly.",
+          "price": 150,
+          "duration": 30,
+          "image": "service-grey",
+          "popular": false
+        },
+        {
+          "slug": "scalp-treatment",
+          "name": "Scalp Treatment",
+          "desc": "Exfoliating scrub, massage and tonic. For dryness, flaking or simply because it feels good.",
+          "price": 200,
+          "duration": 30,
+          "image": "service-scalp",
+          "popular": false
+        }
+      ]
+    }
+  ],
+
+  "barbers": [
+    {
+      "slug": "kenny",
+      "name": "Kenny Mareya",
+      "first": "Kenny",
+      "role": "Founder & Master Barber",
+      "years": 28,
+      "image": "barber-kenny",
+      "dayOff": 2,
+      "dayOffName": "Tuesday",
+      "specialties": ["Scissor work", "Classic cuts", "Grey blending"],
+      "bio": "Kenny opened a single-chair shop on Fourth Avenue in 1998 with a borrowed mirror and a secondhand chair. Twenty-eight years later he still takes the first appointment of the day and still cuts almost entirely with scissors.",
+      "quote": "A good cut should still look like a good cut four weeks later. That's the whole job."
+    },
+    {
+      "slug": "thabo",
+      "name": "Thabo Nkosi",
+      "first": "Thabo",
+      "role": "Senior Barber",
+      "years": 11,
+      "image": "barber-thabo",
+      "dayOff": 3,
+      "dayOffName": "Wednesday",
+      "specialties": ["Skin fades", "Line-ups", "Textured crops"],
+      "bio": "Thabo came up through the shop as an apprentice in 2015 and now runs the second chair. If you want a fade you can't find the line on, this is the booking to make.",
+      "quote": "The blend is where the patience goes. Everything else is just tidying up."
+    },
+    {
+      "slug": "rea",
+      "name": "Rea Dlamini",
+      "first": "Rea",
+      "role": "Barber & Beard Specialist",
+      "years": 8,
+      "image": "barber-rea",
+      "dayOff": 4,
+      "dayOffName": "Thursday",
+      "specialties": ["Beard sculpting", "Hot towel shaves", "Straight razor"],
+      "bio": "Rea trained in traditional wet shaving in Cape Town before joining us in 2021. She has quietly turned the hot towel shave into the appointment our regulars book for the sake of the hour itself.",
+      "quote": "Nobody should rush a straight razor. That's the point of it."
+    },
+    {
+      "slug": "ayanda",
+      "name": "Ayanda Khumalo",
+      "first": "Ayanda",
+      "role": "Barber",
+      "years": 6,
+      "image": "barber-ayanda",
+      "dayOff": 5,
+      "dayOffName": "Friday",
+      "specialties": ["Textured crops", "Kids cuts", "Curl work"],
+      "bio": "Ayanda has the steadiest hands in the shop and the most patience with a nervous six-year-old. He handles most of our Saturday family bookings and all of our curl work.",
+      "quote": "Every kid's first cut should be one they'd come back for. No tears on my chair."
+    }
+  ],
+
+  "testimonials": [
+    {
+      "quote": "I've been going to Kenny for nine years and I've never once had to explain what I want. Worth the drive across town.",
+      "name": "Sipho M.",
+      "meta": "Regular since 2017"
+    },
+    {
+      "quote": "Booked the Full Service for my wedding morning. Rea gave me the best shave of my life and calmed me down more than the best man did.",
+      "name": "Daniel V.",
+      "meta": "Hot Towel Shave"
+    },
+    {
+      "quote": "Took my son for his first proper cut. Ayanda had him laughing within a minute. He's already asking when we go back.",
+      "name": "Nomsa K.",
+      "meta": "Father & Son"
+    },
+    {
+      "quote": "Thabo's fades are genuinely the sharpest in Joburg. I've tried a lot of shops and stopped looking after this one.",
+      "name": "Lebo T.",
+      "meta": "Skin Fade"
+    }
+  ],
+
+  "faqs": [
+    {
+      "q": "Do you take walk-ins?",
+      "a": "We do, whenever a chair is free — but Parkhurst gets busy from midday and on Saturdays we're usually fully booked by mid-morning. If you have a time in mind, booking is the safer bet."
+    },
+    {
+      "q": "How early should I arrive?",
+      "a": "Five minutes before your slot is perfect. That gives us time for a proper consultation without eating into your chair time. We hold appointments for ten minutes past the booked time."
+    },
+    {
+      "q": "What if I need to cancel or move my appointment?",
+      "a": "Just let us know at least 24 hours ahead and we'll move it at no charge — a phone call or a WhatsApp is fine. Short-notice cancellations and no-shows are covered in our Terms."
+    },
+    {
+      "q": "Can I request a specific barber?",
+      "a": "Always. You can pick your barber during booking, and the calendar will only show you the days that barber is actually in the shop. Choosing \"Any available barber\" opens up the most time slots."
+    },
+    {
+      "q": "Is there parking on Fourth Avenue?",
+      "a": "There's free street parking along Fourth Avenue and a secure lot behind the block off Ninth Street, two minutes' walk. Our car guard works the strip until seven."
+    },
+    {
+      "q": "Which payment methods do you accept?",
+      "a": "Card, cash, SnapScan and Zapper, all in-store after your appointment. We don't take a deposit for standard bookings."
+    },
+    {
+      "q": "Do you cut children's hair?",
+      "a": "Yes — Kids Cuts are for under 12s and Ayanda handles most of them. Under 16s need a parent or guardian in the shop for the appointment."
+    },
+    {
+      "q": "Do you sell gift vouchers?",
+      "a": "We do, for any service or as an open amount. Pop into the shop or give us a call and we'll sort one out. They're valid for twelve months."
+    }
+  ],
+
+  "values": [
+    {
+      "title": "Consultation first",
+      "body": "No chair time starts until we've agreed on what we're doing. Bring a photo, bring an idea, or bring nothing at all — we'll work it out together before the clippers come out."
+    },
+    {
+      "title": "Time to do it properly",
+      "body": "We book in forty-five minute blocks where most shops book thirty. It means we never rush the blend, and it means you're never waiting on the chair in front of you."
+    },
+    {
+      "title": "Trained in-house",
+      "body": "Every barber on our floor came up through our own apprenticeship. It's why the standard is the same whichever chair you land in."
+    },
+    {
+      "title": "A cut that grows out well",
+      "body": "Anyone can make hair look good on the day. We cut with week four in mind, so it softens rather than falls apart."
+    }
+  ],
+
+  "timeline": [
+    { "year": "1998", "title": "One chair, one mirror", "body": "Kenny Mareya opens a single-chair shop on Fourth Avenue with a secondhand barber's chair and a hand-painted sign." },
+    { "year": "2006", "title": "The second chair", "body": "Demand outgrows one pair of hands. The shop takes over the unit next door and the apprenticeship programme begins." },
+    { "year": "2015", "title": "Thabo joins", "body": "Thabo Nkosi starts as an apprentice, sweeping floors and learning fades. He's run the second chair since 2019." },
+    { "year": "2021", "title": "The shave returns", "body": "Rea Dlamini brings traditional straight razor wet shaving to the shop, and the Hot Towel Shave becomes a booking in its own right." },
+    { "year": "2026", "title": "Four chairs, same standard", "body": "Twenty-eight years on Fourth Avenue. Same corner, same founder, still cutting the first appointment of the day." }
+  ],
+
+  "offer": {
+    "eyebrow": "First visit",
+    "title": "15% off your first cut",
+    "body": "New to the shop? Use this code when you book and we'll take 15% off your first appointment with any of our barbers.",
+    "code": "SHARP15",
+    "terms": "Valid for first-time customers on a single appointment. Cannot be combined with package pricing or the student rate. Mention the code when you arrive."
+  },
+
+  "booking": {
+    "slotStepMinutes": 15,
+    "maxDaysAhead": 60,
+    "minLeadMinutes": 60,
+    "bufferMinutes": 0
+  }
+}

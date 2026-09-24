@@ -1,0 +1,23 @@
+# Dependencies (test tooling only — the site itself has none)
+node_modules/
+package-lock.json
+
+# Test output
+tests/shots/
+tests/*.jpg
+tests/crop-*.png
+tests/review*.jpg
+tests/sheet*.jpg
+tests/contact-sheet.jpg
+tests/.fontcache/
+
+# OS / editor
+Thumbs.db
+.DS_Store
+desktop.ini
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc

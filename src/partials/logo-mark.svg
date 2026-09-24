@@ -1,0 +1,10 @@
+<svg class="logomark" viewBox="0 0 120 120" role="img" aria-label="Kenny's Barbering Co. monogram" focusable="false">
+  <circle cx="60" cy="60" r="56" fill="none" stroke="var(--brass)" stroke-width="3"/>
+  <circle cx="60" cy="60" r="48" fill="none" stroke="var(--brass)" stroke-width="1.25" opacity=".55"/>
+  <g stroke="var(--bone)" stroke-width="7" stroke-linecap="square" fill="none">
+    <path d="M47 38V82"/>
+    <path d="M47 60 69 38"/>
+    <path d="M47 60 71 82"/>
+  </g>
+  <path d="M38 91h44" stroke="var(--brass)" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

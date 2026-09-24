@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en-ZA" class="no-js">
+<head>
+{{> head }}
+</head>
+<body>
+<script>document.documentElement.classList.remove('no-js');</script>
+
+{{> header }}
+
+<main id="main">
+  <section class="nf shell">
+    <p class="nf__code">404</p>
+    <h1 class="nf__title">A bit too much off the top.</h1>
+    <p class="lead nf__lead">
+      That page isn&rsquo;t here &mdash; it may have moved, or the link might have
+      a typo. Here&rsquo;s the way back.
+    </p>
+    <div class="btnrow nf__cta">
+      <a class="btn btn--primary" href="index.html">
+        Back to home
+        <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a class="btn btn--ghost" href="booking.html">Book an appointment</a>
+    </div>
+
+    <div style="margin-top:3.5rem;padding-top:2rem;border-top:var(--hair);max-width:520px;margin-inline:auto">
+      <p style="font-size:var(--t-xs);letter-spacing:.14em;text-transform:uppercase;color:var(--brass);margin-bottom:1rem">
+        Try one of these
+      </p>
+      <div class="btnrow" style="justify-content:center">
+        <a class="btn btn--ghost btn--sm" href="services.html">Services &amp; prices</a>
+        <a class="btn btn--ghost btn--sm" href="about.html">About &amp; barbers</a>
+        <a class="btn btn--ghost btn--sm" href="gallery.html">Gallery</a>
+        <a class="btn btn--ghost btn--sm" href="contact.html">Contact</a>
+      </div>
+      <p class="summary__note" style="margin-top:2rem">
+        Still stuck? Call us on
+        <a href="tel:{{ contact.phoneHref }}" style="color:var(--brass)">{{ contact.phoneDisplay }}</a>.
+      </p>
+    </div>
+  </section>
+</main>
+
+{{> footer }}
+
+<div class="toast" data-toast role="status" aria-live="polite">
+  <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span data-toast-text></span>
+</div>
+
+<script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>

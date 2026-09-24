@@ -1,0 +1,36 @@
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.desc }}">
+  <meta name="robots" content="{{ page.robots }}">
+  <link rel="canonical" href="{{ page.canonical }}">
+  <meta name="theme-color" content="#0E0E10">
+  <meta name="author" content="{{ brand.legalName }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ brand.legalName }}">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.desc }}">
+  <meta property="og:url" content="{{ page.canonical }}">
+  <meta property="og:image" content="{{ brand.baseUrl }}assets/img/{{ page.og }}.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ brand.legalName }} — {{ brand.tagline }}">
+  <meta property="og:locale" content="en_ZA">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.desc }}">
+  <meta name="twitter:image" content="{{ brand.baseUrl }}assets/img/{{ page.og }}.jpg">
+
+  <link rel="icon" href="./assets/logo/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/logo/apple-touch-icon.png">
+  <link rel="manifest" href="./site.webmanifest">
+
+  <link rel="preload" href="./assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./assets/css/site.css">
+
+  <script type="application/ld+json">
+{{ json_ld }}
+  </script>

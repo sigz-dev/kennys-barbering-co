@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en-ZA" class="no-js">
+<head>
+{{> head }}
+</head>
+<body>
+<script>document.documentElement.classList.remove('no-js');</script>
+
+{{> header }}
+
+<main id="main">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero__media">
+      <img class="hero__img"
+           src="./assets/img/hero-1920.jpg"
+           srcset="./assets/img/hero-640.jpg 640w, ./assets/img/hero-1280.jpg 1280w, ./assets/img/hero-1920.jpg 1920w"
+           sizes="100vw"
+           alt="The floor at Kenny's Barbering Co. — four vintage barber chairs beneath brass pendant lights against an exposed brick wall."
+           width="1920" height="1080" fetchpriority="high" decoding="async">
+    </div>
+    <div class="hero__scrim"></div>
+
+    <div class="shell hero__inner">
+      <p class="eyebrow">Parkhurst, Johannesburg &middot; Est. {{ brand.established }}</p>
+      <h1 class="hero__title">A cut <em>above</em>, since 1998.</h1>
+      <p class="hero__lead">
+        Four chairs on Fourth Avenue. A proper consultation, forty-five unhurried
+        minutes, and a cut that still looks right in week four.
+      </p>
+
+      <div class="btnrow hero__cta">
+        <a class="btn btn--primary btn--lg" href="booking.html">
+          Book your chair
+          <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--ghost btn--lg" href="services.html">View services &amp; prices</a>
+      </div>
+
+      <div class="hero__meta">
+        <span><strong>28</strong> years on Fourth Avenue</span>
+        <span><strong>4</strong> chairs, trained in-house</span>
+        <span><strong>45</strong> min standard appointment</span>
+        <span class="openbadge is-closed" data-openbadge>Checking&hellip;</span>
+      </div>
+    </div>
+
+    <a class="scrollcue" href="#services">Scroll</a>
+  </section>
+
+  <!-- ===================== TRUST STRIP ===================== -->
+  <div class="strip" aria-hidden="true">
+    <div class="strip__track">
+      <span class="strip__item">Skin fades</span>
+      <span class="strip__item">Hot towel shaves</span>
+      <span class="strip__item">Beard sculpting</span>
+      <span class="strip__item">Scissor work</span>
+      <span class="strip__item">Kids cuts</span>
+      <span class="strip__item">Straight razor</span>
+      <span class="strip__item">Grey blending</span>
+      <span class="strip__item">Walk-ins welcome</span>
+      <span class="strip__item">Skin fades</span>
+      <span class="strip__item">Hot towel shaves</span>
+      <span class="strip__item">Beard sculpting</span>
+      <span class="strip__item">Scissor work</span>
+      <span class="strip__item">Kids cuts</span>
+      <span class="strip__item">Straight razor</span>
+      <span class="strip__item">Grey blending</span>
+      <span class="strip__item">Walk-ins welcome</span>
+    </div>
+  </div>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="section" id="services" aria-labelledby="svc-h">
+    <div class="shell">
+      <div class="sechead sechead--split reveal">
+        <div>
+          <p class="eyebrow">What we do</p>
+          <h2 class="sechead__title" id="svc-h">The work</h2>
+          <p class="lead sechead__lead">
+            Everything starts with a consultation and ends with a hot towel.
+            Book any of these online in under a minute.
+          </p>
+        </div>
+        <a class="tlink" href="services.html">
+          Full price list
+          <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="scards">
+        {{ services_preview }}
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STORY ===================== -->
+  <section class="section section--raise section--line" aria-labelledby="story-h">
+    <div class="shell">
+      <div class="split">
+        <div class="split__media reveal">
+          <img class="split__img"
+               src="./assets/img/shop-interior-1280.jpg"
+               srcset="./assets/img/shop-interior-640.jpg 640w, ./assets/img/shop-interior-1280.jpg 1280w, ./assets/img/shop-interior-1920.jpg 1920w"
+               sizes="(max-width: 900px) 92vw, 45vw"
+               alt="Inside the shop — a leather barber's chair framed by mirrors and framed prints."
+               width="1280" height="853" loading="lazy" decoding="async">
+          <div class="stamp">{{> logo-seal }}</div>
+        </div>
+
+        <div class="reveal">
+          <p class="eyebrow">Our story</p>
+          <h2 class="split__title" id="story-h">One chair, one mirror, one standard.</h2>
+          <div class="split__body">
+            <p>
+              Kenny Mareya opened a single-chair shop on Fourth Avenue in 1998
+              with a secondhand barber's chair and a hand-painted sign. He still
+              takes the first appointment of the day.
+            </p>
+            <p>
+              Twenty-eight years later there are four chairs, and every barber on
+              the floor came up through our own apprenticeship. It's why the
+              standard is the same whichever chair you land in.
+            </p>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <p class="stat__num">1998</p>
+              <p class="stat__label">On Fourth Avenue</p>
+            </div>
+            <div class="stat">
+              <p class="stat__num">4</p>
+              <p class="stat__label">Barbers on the floor</p>
+            </div>
+            <div class="stat">
+              <p class="stat__num">45<span style="font-size:.5em">min</span></p>
+              <p class="stat__label">Standard appointment</p>
+            </div>
+          </div>
+
+          <div class="split__cta">
+            <a class="tlink" href="about.html">
+              Read the full story
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VALUES ===================== -->
+  <section class="section" aria-labelledby="vals-h">
+    <div class="shell">
+      <div class="sechead reveal">
+        <p class="eyebrow">Why people come back</p>
+        <h2 class="sechead__title" id="vals-h">How we work</h2>
+      </div>
+      <div class="values">
+        {{ values }}
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BARBERS ===================== -->
+  <section class="section section--raise section--line" aria-labelledby="team-h">
+    <div class="shell">
+      <div class="sechead sechead--split reveal">
+        <div>
+          <p class="eyebrow">The floor</p>
+          <h2 class="sechead__title" id="team-h">Meet your barber</h2>
+          <p class="lead sechead__lead">
+            Pick the chair you want. The booking calendar only offers the days
+            that barber is actually in the shop.
+          </p>
+        </div>
+        <a class="tlink" href="about.html#kenny">
+          All four profiles
+          <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <div class="bcards">
+        {{ barber_strip }}
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="section" aria-labelledby="gal-h">
+    <div class="shell">
+      <div class="sechead sechead--split reveal">
+        <div>
+          <p class="eyebrow">Our work</p>
+          <h2 class="sechead__title" id="gal-h">On the floor</h2>
+        </div>
+        <a class="tlink" href="gallery.html">
+          See the gallery
+          <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="mosaic reveal">
+        <div class="mosaic__item mosaic__item--tall">
+          <img src="./assets/img/gallery-01-640.jpg"
+               srcset="./assets/img/gallery-01-640.jpg 640w, ./assets/img/gallery-01-1280.jpg 1280w"
+               sizes="(max-width: 720px) 48vw, 24vw"
+               alt="A barber shaping a client's textured crop with clippers."
+               width="640" height="800" loading="lazy" decoding="async">
+          <span class="mosaic__cap">Textured crop</span>
+        </div>
+        <div class="mosaic__item mosaic__item--wide">
+          <img src="./assets/img/gallery-04-640.jpg"
+               srcset="./assets/img/gallery-04-640.jpg 640w, ./assets/img/gallery-04-1280.jpg 1280w"
+               sizes="(max-width: 720px) 48vw, 48vw"
+               alt="Clippers, shears, a comb and pomade laid out on a slate board."
+               width="640" height="427" loading="lazy" decoding="async">
+          <span class="mosaic__cap">The tools</span>
+        </div>
+        <div class="mosaic__item">
+          <img src="./assets/img/gallery-07-640.jpg"
+               srcset="./assets/img/gallery-07-640.jpg 640w, ./assets/img/gallery-07-1280.jpg 1280w"
+               sizes="(max-width: 720px) 48vw, 24vw"
+               alt="Close detail of a beard line being trimmed with a trimmer."
+               width="640" height="853" loading="lazy" decoding="async">
+          <span class="mosaic__cap">Beard line</span>
+        </div>
+        <div class="mosaic__item">
+          <img src="./assets/img/gallery-03-640.jpg"
+               srcset="./assets/img/gallery-03-640.jpg 640w, ./assets/img/gallery-03-1280.jpg 1280w"
+               sizes="(max-width: 720px) 48vw, 24vw"
+               alt="A lathered hot towel shave in progress."
+               width="640" height="427" loading="lazy" decoding="async">
+          <span class="mosaic__cap">Hot towel shave</span>
+        </div>
+        <div class="mosaic__item">
+          <img src="./assets/img/gallery-05-640.jpg"
+               srcset="./assets/img/gallery-05-640.jpg 640w, ./assets/img/gallery-05-1280.jpg 1280w"
+               sizes="(max-width: 720px) 48vw, 24vw"
+               alt="A skin fade blended tight around the ear."
+               width="640" height="800" loading="lazy" decoding="async">
+          <span class="mosaic__cap">Skin fade</span>
+        </div>
+        <div class="mosaic__item">
+          <img src="./assets/img/gallery-06-640.jpg"
+               srcset="./assets/img/gallery-06-640.jpg 640w, ./assets/img/gallery-06-1280.jpg 1280w"
+               sizes="(max-width: 720px) 48vw, 24vw"
+               alt="A vintage leather barber's chair under warm shop lighting."
+               width="640" height="427" loading="lazy" decoding="async">
+          <span class="mosaic__cap">Chair two</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="section section--raise section--line" aria-labelledby="says-h">
+    <div class="shell">
+      <div class="sechead sechead--center reveal">
+        <p class="eyebrow eyebrow--center">From the chair</p>
+        <h2 class="sechead__title" id="says-h">What our regulars say</h2>
+      </div>
+      <div class="quotes">
+        {{ testimonials }}
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HOURS ===================== -->
+  <section class="section" aria-labelledby="hrs-h">
+    <div class="shell">
+      <div class="split">
+        <div class="reveal">
+          <p class="eyebrow">Find us</p>
+          <h2 class="split__title" id="hrs-h">Fourth Avenue, Parkhurst.</h2>
+          <div class="split__body">
+            <p>
+              We're on the Fourth Avenue strip, two doors up from the corner.
+              Free street parking outside and a secure lot off Ninth Street.
+            </p>
+          </div>
+          <address class="footer__contact" style="margin-top:1.5rem">
+            <a href="https://www.google.com/maps/search/?api=1&amp;query={{ contact.lat }},{{ contact.lon }}"
+               target="_blank" rel="noopener noreferrer">{{ contact.addressFull }}</a>
+            <a href="tel:{{ contact.phoneHref }}">{{ contact.phoneDisplay }}</a>
+          </address>
+          <div class="btnrow" style="margin-top:2rem">
+            <a class="btn btn--ghost" href="contact.html">Directions &amp; contact</a>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:1rem">
+            <h3 style="font-size:var(--t-h4)">Opening hours</h3>
+            <span class="openbadge is-closed" data-openbadge>Checking&hellip;</span>
+          </div>
+          <div class="hours" data-hours>
+            {{ hours_rows }}
+          </div>
+          <p class="summary__note" style="margin-top:1rem">
+            Last appointment starts 45 minutes before closing. Public holidays
+            vary &mdash; give us a call if you're unsure.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA BAND ===================== -->
+  <section class="section band" aria-labelledby="cta-h">
+    <div class="band__media">
+      <img src="./assets/img/shop-moody-1280.jpg"
+           srcset="./assets/img/shop-moody-640.jpg 640w, ./assets/img/shop-moody-1280.jpg 1280w, ./assets/img/shop-moody-1920.jpg 1920w"
+           sizes="100vw"
+           alt=""
+           width="1280" height="720" loading="lazy" decoding="async">
+    </div>
+    <div class="band__scrim"></div>
+    <div class="shell">
+      <h2 class="band__title" id="cta-h">Your chair is waiting.</h2>
+      <p class="band__lead">
+        Pick a service, choose your barber and a time that works. Takes about a
+        minute, and you can drop the appointment straight into your calendar.
+      </p>
+      <div class="band__cta">
+        <a class="btn btn--primary btn--lg" href="booking.html">
+          Book an appointment
+          <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--ghost btn--lg" href="tel:{{ contact.phoneHref }}">Call {{ contact.phoneDisplay }}</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{{> footer }}
+{{> offer-modal }}
+
+<div class="toast" data-toast role="status" aria-live="polite">
+  <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span data-toast-text></span>
+</div>
+
+<script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en-ZA" class="no-js">
+<head>
+{{> head }}
+</head>
+<body>
+<script>document.documentElement.classList.remove('no-js');</script>
+
+{{> header }}
+
+<main id="main">
+
+  <section class="pagehead">
+    <div class="shell">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span aria-hidden="true">/</span> <span>Services</span>
+      </nav>
+      <p class="eyebrow">Services &amp; prices</p>
+      <h1 class="pagehead__title">Priced properly, timed properly.</h1>
+      <p class="lead pagehead__lead">
+        We book in forty-five minute blocks where most shops book thirty. Every
+        price below is what you pay &mdash; no surcharges, no upsell at the chair.
+      </p>
+      <div class="btnrow" style="margin-top:2rem">
+        <a class="btn btn--primary" href="booking.html">
+          Book an appointment
+          <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--ghost" href="#packages">Jump to packages</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip" aria-hidden="true">
+    <div class="strip__track">
+      <span class="strip__item">Consultation included</span>
+      <span class="strip__item">Hot towel finish</span>
+      <span class="strip__item">No deposit</span>
+      <span class="strip__item">Card, cash, SnapScan &amp; Zapper</span>
+      <span class="strip__item">Free changes 24h ahead</span>
+      <span class="strip__item">Consultation included</span>
+      <span class="strip__item">Hot towel finish</span>
+      <span class="strip__item">No deposit</span>
+      <span class="strip__item">Card, cash, SnapScan &amp; Zapper</span>
+      <span class="strip__item">Free changes 24h ahead</span>
+    </div>
+  </div>
+
+  <section class="section" aria-label="Price list">
+    <div class="shell">
+      {{ services_full }}
+    </div>
+  </section>
+
+  <section class="section section--raise section--line" aria-labelledby="incl-h">
+    <div class="shell">
+      <div class="split">
+        <div class="split__media reveal">
+          <img class="split__img"
+               src="./assets/img/gallery-04-1280.jpg"
+               srcset="./assets/img/gallery-04-640.jpg 640w, ./assets/img/gallery-04-1280.jpg 1280w, ./assets/img/gallery-04-1920.jpg 1920w"
+               sizes="(max-width: 900px) 92vw, 45vw"
+               alt="Clippers, shears, a comb and grooming products laid out on a slate board."
+               width="1280" height="853" loading="lazy" decoding="async">
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">What&rsquo;s included</p>
+          <h2 class="split__title" id="incl-h">Every appointment, every time.</h2>
+          <div class="split__body">
+            <p>
+              No service on this page is a bare trim. Whichever you book, the
+              appointment runs the same way.
+            </p>
+          </div>
+          <div class="values" style="margin-top:2rem;grid-template-columns:1fr">
+            <article class="value">
+              <p class="value__num">01</p>
+              <h3 class="value__title">A proper consultation</h3>
+              <p class="value__body">Nothing starts until we&rsquo;ve agreed what we&rsquo;re doing. Bring a photo or bring nothing.</p>
+            </article>
+            <article class="value">
+              <p class="value__num">02</p>
+              <h3 class="value__title">Hot towel &amp; finish</h3>
+              <p class="value__body">Every cut closes with a hot towel, a neck tidy and product if you want it.</p>
+            </article>
+            <article class="value">
+              <p class="value__num">03</p>
+              <h3 class="value__title">Our redo promise</h3>
+              <p class="value__body">Not right? Come back within seven days and we&rsquo;ll put it right at no charge.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="pay-h">
+    <div class="shell shell--narrow">
+      <div class="sechead sechead--center reveal">
+        <p class="eyebrow eyebrow--center">Good to know</p>
+        <h2 class="sechead__title" id="pay-h">The practical bits</h2>
+      </div>
+      <div class="values">
+        <article class="value reveal">
+          <p class="value__num">Payment</p>
+          <h3 class="value__title">In store, after your cut</h3>
+          <p class="value__body">Card, cash, SnapScan and Zapper. We don&rsquo;t take a deposit for standard bookings.</p>
+        </article>
+        <article class="value reveal">
+          <p class="value__num">Students</p>
+          <h3 class="value__title">R220 Tuesday to Friday</h3>
+          <p class="value__body">Same Signature Cut, student rate. Just bring a valid student card.</p>
+        </article>
+        <article class="value reveal">
+          <p class="value__num">Under 16s</p>
+          <h3 class="value__title">A parent in the shop</h3>
+          <p class="value__body">Kids Cuts are for under 12s. Anyone under 16 needs a parent or guardian present.</p>
+        </article>
+        <article class="value reveal">
+          <p class="value__num">Vouchers</p>
+          <h3 class="value__title">Valid twelve months</h3>
+          <p class="value__body">For any service or an open amount. Pop in or give us a call and we&rsquo;ll sort one out.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band" aria-labelledby="scta-h">
+    <div class="band__media">
+      <img src="./assets/img/service-fade-1280.jpg"
+           srcset="./assets/img/service-fade-640.jpg 640w, ./assets/img/service-fade-1280.jpg 1280w, ./assets/img/service-fade-1920.jpg 1920w"
+           sizes="100vw" alt="" width="1280" height="960" loading="lazy" decoding="async">
+    </div>
+    <div class="band__scrim"></div>
+    <div class="shell">
+      <h2 class="band__title" id="scta-h">Found what you&rsquo;re after?</h2>
+      <p class="band__lead">
+        Pick your barber and a time that works. About a minute, and the
+        appointment goes straight into your calendar.
+      </p>
+      <div class="band__cta">
+        <a class="btn btn--primary btn--lg" href="booking.html">
+          Book now
+          <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--ghost btn--lg" href="about.html">Meet the barbers</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{{> footer }}
+{{> offer-modal }}
+
+<div class="toast" data-toast role="status" aria-live="polite">
+  <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span data-toast-text></span>
+</div>
+
+<script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<svg class="logoseal" viewBox="0 0 120 120" role="img" aria-label="Kenny's Barbering Co. — established 1998, Parkhurst" focusable="false">
+  <defs>
+    <path id="sealArc" d="M 20,62 A 40,40 0 0 1 100,62"/>
+  </defs>
+  <circle cx="60" cy="60" r="57" fill="none" stroke="var(--brass)" stroke-width="1.6"/>
+  <circle cx="60" cy="60" r="52" fill="none" stroke="var(--brass)" stroke-width=".7" opacity=".5"/>
+
+  <text class="logoseal__arc" fill="var(--brass)">
+    <textPath href="#sealArc" startOffset="50%" text-anchor="middle"
+              textLength="118" lengthAdjust="spacing">KENNY'S BARBERING CO.</textPath>
+  </text>
+
+  <g stroke="var(--bone)" stroke-width="6" stroke-linecap="square" fill="none">
+    <path d="M48 44V78"/>
+    <path d="M48 62 68 44"/>
+    <path d="M48 62 70 78"/>
+  </g>
+
+  <path d="M40 87h40" stroke="var(--brass)" stroke-width="1.2" stroke-linecap="round"/>
+  <text class="logoseal__est" x="60" y="99" text-anchor="middle"
+        fill="var(--bone-dim)">EST. 1998</text>
+  <circle cx="34" cy="87" r="1.6" fill="var(--brass)"/>
+  <circle cx="86" cy="87" r="1.6" fill="var(--brass)"/>
+</svg>

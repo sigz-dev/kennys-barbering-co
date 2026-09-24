@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en-ZA" class="no-js">
+<head>
+{{> head }}
+{{> faq-schema }}
+</head>
+<body>
+<script>document.documentElement.classList.remove('no-js');</script>
+
+{{> header }}
+
+<main id="main">
+
+  <section class="pagehead">
+    <div class="shell">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span aria-hidden="true">/</span> <span>Contact</span>
+      </nav>
+      <p class="eyebrow">Find us</p>
+      <h1 class="pagehead__title">Fourth Avenue, Parkhurst.</h1>
+      <p class="lead pagehead__lead">
+        Two doors up from the corner, on the quiet end of the strip. Free street
+        parking outside and a secure lot two minutes&rsquo; walk away.
+      </p>
+      <div class="btnrow" style="margin-top:2rem">
+        <a class="btn btn--primary" href="booking.html">Book an appointment</a>
+        <a class="btn btn--ghost" href="tel:{{ contact.phoneHref }}">Call {{ contact.phoneDisplay }}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="find-h">
+    <div class="shell">
+      <h2 class="u-sr-only" id="find-h">Contact details and location</h2>
+
+      <div class="contactgrid">
+        <div class="reveal">
+
+          <div class="infoblock">
+            <h3 class="infoblock__title">The shop</h3>
+            <address>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query={{ contact.lat }},{{ contact.lon }}"
+                 target="_blank" rel="noopener noreferrer">
+                {{ contact.addressLine }}<br>
+                {{ contact.suburb }}<br>
+                {{ contact.city }}, {{ contact.postalCode }}<br>
+                South Africa
+              </a>
+            </address>
+          </div>
+
+          <div class="infoblock">
+            <h3 class="infoblock__title">Get in touch</h3>
+            <address>
+              Phone <a href="tel:{{ contact.phoneHref }}">{{ contact.phoneDisplay }}</a><br>
+              WhatsApp <a href="https://wa.me/{{ contact.whatsappHref }}" target="_blank" rel="noopener noreferrer">{{ contact.whatsappDisplay }}</a><br>
+              Email <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+            </address>
+          </div>
+
+          <div class="infoblock">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:1rem">
+              <h3 class="infoblock__title" style="margin:0">Opening hours</h3>
+              <span class="openbadge is-closed" data-openbadge>Checking&hellip;</span>
+            </div>
+            <div class="hours" data-hours>
+              {{ hours_rows }}
+            </div>
+            <p class="summary__note" style="margin-top:1rem">
+              Last appointment starts 45 minutes before closing. Public holiday
+              hours vary &mdash; give us a call if you&rsquo;re unsure.
+            </p>
+          </div>
+
+          <div class="infoblock">
+            <h3 class="infoblock__title">Parking &amp; arrival</h3>
+            <p style="color:var(--bone-dim);font-size:var(--t-sm)">
+              There&rsquo;s free street parking along Fourth Avenue, and a secure
+              lot behind the block off Ninth Street. Our car guard works the strip
+              until seven. Arrive about five minutes before your slot so we have
+              time for a proper consultation.
+            </p>
+          </div>
+
+          <div class="infoblock">
+            <h3 class="infoblock__title">Follow the shop</h3>
+            <div class="socials" style="margin-top:0">
+              {{ social_links }}
+            </div>
+          </div>
+
+        </div>
+
+        <div class="reveal">
+          <div class="map">
+            <iframe
+              title="Map showing Kenny's Barbering Co. on Fourth Avenue, Parkhurst, Johannesburg"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=28.0106%2C-26.1467%2C28.0266%2C-26.1367&amp;layer=mapnik&amp;marker={{ contact.lat }}%2C{{ contact.lon }}"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map__foot">
+              <a class="btn btn--ghost btn--sm"
+                 href="https://www.google.com/maps/search/?api=1&amp;query={{ contact.lat }},{{ contact.lon }}"
+                 target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
+              <a class="btn btn--ghost btn--sm"
+                 href="https://maps.apple.com/?ll={{ contact.lat }},{{ contact.lon }}&amp;q=Kenny%27s%20Barbering%20Co."
+                 target="_blank" rel="noopener noreferrer">Open in Apple Maps</a>
+              <a class="btn btn--ghost btn--sm"
+                 href="https://www.openstreetmap.org/?mlat={{ contact.lat }}&amp;mlon={{ contact.lon }}#map=17/{{ contact.lat }}/{{ contact.lon }}"
+                 target="_blank" rel="noopener noreferrer">OpenStreetMap</a>
+            </div>
+          </div>
+
+          <!-- ============ ENQUIRY FORM ============ -->
+          <div style="margin-top:2.5rem">
+            <h3 class="infoblock__title">Send us a message</h3>
+            <p class="summary__note" style="margin:-.5rem 0 1.5rem">
+              For bookings please use the <a href="booking.html" style="color:var(--brass)">booking page</a> &mdash;
+              it&rsquo;s faster and you&rsquo;ll see live availability.
+            </p>
+
+            <form class="formgrid formgrid--2" data-contact-form novalidate>
+              <div class="field">
+                <label class="field__label" for="ct-name">
+                  Your name <span class="field__req" aria-hidden="true">*</span>
+                </label>
+                <input class="input" id="ct-name" name="name" type="text"
+                       autocomplete="name" data-validate="name" required placeholder="Sipho Mahlangu">
+                <p class="field__error"></p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="ct-phone">Phone</label>
+                <input class="input" id="ct-phone" name="phone" type="tel"
+                       autocomplete="tel" inputmode="tel" placeholder="082 555 0147">
+                <p class="field__hint">Optional.</p>
+              </div>
+
+              <div class="field field--full">
+                <label class="field__label" for="ct-email">
+                  Email <span class="field__req" aria-hidden="true">*</span>
+                </label>
+                <input class="input" id="ct-email" name="email" type="email"
+                       autocomplete="email" inputmode="email" data-validate="email" required
+                       placeholder="you@example.co.za">
+                <p class="field__error"></p>
+              </div>
+
+              <div class="field field--full">
+                <label class="field__label" for="ct-subject">What&rsquo;s it about?</label>
+                <select class="select" id="ct-subject" name="subject">
+                  <option>General enquiry</option>
+                  <option>Gift vouchers</option>
+                  <option>Change or cancel a booking</option>
+                  <option>Group or wedding party</option>
+                  <option>Apprenticeships &amp; careers</option>
+                  <option>Feedback</option>
+                </select>
+              </div>
+
+              <div class="field field--full">
+                <label class="field__label" for="ct-message">
+                  Message <span class="field__req" aria-hidden="true">*</span>
+                </label>
+                <textarea class="textarea" id="ct-message" name="message"
+                          data-validate="message" required
+                          placeholder="Tell us what you need and we&rsquo;ll come back to you within a working day."></textarea>
+                <p class="field__error"></p>
+              </div>
+
+              <div class="field--full">
+                <button class="btn btn--primary" type="submit">
+                  Send message
+                  <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <p class="field__hint" style="margin-top:.75rem">
+                  This opens your email app with the message ready to send.
+                </p>
+              </div>
+
+              <div class="field--full">
+                <div class="formnote" data-contact-done hidden>
+                  <div>
+                    <strong style="color:var(--bone)">Your email app should have opened.</strong>
+                    If nothing happened, write to us directly at
+                    <a href="mailto:{{ contact.email }}" style="color:var(--brass)">{{ contact.email }}</a>.
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--raise section--line" id="faq" aria-labelledby="faq-h">
+    <div class="shell shell--narrow">
+      <div class="sechead reveal">
+        <p class="eyebrow">Before you come in</p>
+        <h2 class="sechead__title" id="faq-h">Frequently asked</h2>
+      </div>
+      {{ faqs }}
+      <p class="summary__note" style="margin-top:2rem">
+        Still stuck? Call <a href="tel:{{ contact.phoneHref }}" style="color:var(--brass)">{{ contact.phoneDisplay }}</a>
+        or read our <a href="terms.html" style="color:var(--brass)">Terms &amp; Conditions</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="section band" aria-labelledby="ccta-h">
+    <div class="band__media">
+      <img src="./assets/img/shop-exterior-1280.jpg"
+           srcset="./assets/img/shop-exterior-640.jpg 640w, ./assets/img/shop-exterior-1280.jpg 1280w, ./assets/img/shop-exterior-1920.jpg 1920w"
+           sizes="100vw" alt="" width="1280" height="853" loading="lazy" decoding="async">
+    </div>
+    <div class="band__scrim"></div>
+    <div class="shell">
+      <h2 class="band__title" id="ccta-h">We&rsquo;ll see you on Fourth Avenue.</h2>
+      <p class="band__lead">
+        Book ahead for the time you want, or take your chances on a walk-in
+        &mdash; we&rsquo;ll always find you a chair if one&rsquo;s free.
+      </p>
+      <div class="band__cta">
+        <a class="btn btn--primary btn--lg" href="booking.html">
+          Book an appointment
+          <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--ghost btn--lg" href="https://wa.me/{{ contact.whatsappHref }}"
+           target="_blank" rel="noopener noreferrer">WhatsApp us</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{{> footer }}
+{{> offer-modal }}
+
+<div class="toast" data-toast role="status" aria-live="polite">
+  <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span data-toast-text></span>
+</div>
+
+<script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>

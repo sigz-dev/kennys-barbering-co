@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="en-ZA" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book an Appointment | Kenny's Barbering Co.</title>
+  <meta name="description" content="Book your chair in four steps. Choose a service, pick your barber, select a date and time, and add the appointment straight to your calendar.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sigz-dev.github.io/kennys-barbering-co/booking.html">
+  <meta name="theme-color" content="#0E0E10">
+  <meta name="author" content="Kenny's Barbering Co.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kenny's Barbering Co.">
+  <meta property="og:title" content="Book an Appointment | Kenny's Barbering Co.">
+  <meta property="og:description" content="Book your chair in four steps. Choose a service, pick your barber, select a date and time, and add the appointment straight to your calendar.">
+  <meta property="og:url" content="https://sigz-dev.github.io/kennys-barbering-co/booking.html">
+  <meta property="og:image" content="https://sigz-dev.github.io/kennys-barbering-co/assets/img/og-booking.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Kenny's Barbering Co. — A cut above, since 1998.">
+  <meta property="og:locale" content="en_ZA">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Book an Appointment | Kenny's Barbering Co.">
+  <meta name="twitter:description" content="Book your chair in four steps. Choose a service, pick your barber, select a date and time, and add the appointment straight to your calendar.">
+  <meta name="twitter:image" content="https://sigz-dev.github.io/kennys-barbering-co/assets/img/og-booking.jpg">
+
+  <link rel="icon" href="./assets/logo/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/logo/apple-touch-icon.png">
+  <link rel="manifest" href="./site.webmanifest">
+
+  <link rel="preload" href="./assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./assets/css/site.css">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "@id": "https://sigz-dev.github.io/kennys-barbering-co/#shop",
+  "name": "Kenny's Barbering Co.",
+  "alternateName": "Kenny's",
+  "description": "A four-chair barbershop on Fourth Avenue, Parkhurst. Cuts, skin fades, beard sculpting and traditional hot towel shaves since 1998. Book your chair online.",
+  "url": "https://sigz-dev.github.io/kennys-barbering-co/",
+  "telephone": "+27114478820",
+  "email": "hello@kennys.co.za",
+  "priceRange": "R120 - R580",
+  "currenciesAccepted": "ZAR",
+  "paymentAccepted": "Cash, Credit Card, Debit Card, SnapScan, Zapper",
+  "foundingDate": "1998",
+  "image": "https://sigz-dev.github.io/kennys-barbering-co/assets/img/og-home.jpg",
+  "logo": "https://sigz-dev.github.io/kennys-barbering-co/assets/logo/logo-seal.svg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Shop 4, 14 Fourth Avenue",
+    "addressLocality": "Parkhurst",
+    "addressRegion": "Gauteng",
+    "postalCode": "2193",
+    "addressCountry": "ZA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -26.1417,
+    "longitude": 28.0186
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "https://schema.org/Tuesday",
+      "opens": "09:00",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "https://schema.org/Wednesday",
+      "opens": "09:00",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "https://schema.org/Thursday",
+      "opens": "09:00",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "https://schema.org/Friday",
+      "opens": "09:00",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "https://schema.org/Saturday",
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "https://schema.org/Sunday",
+      "opens": "10:00",
+      "closes": "15:00"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Barbering services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Signature Cut",
+          "description": "Our house cut. Consultation, clipper and scissor work, hot towel, styled and finished.",
+          "category": "Cuts"
+        },
+        "price": "280",
+        "priceCurrency": "ZAR"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Skin Fade",
+          "description": "A seamless blend down to the skin, sharp line-up and precision detailing at the neck.",
+          "category": "Cuts"
+        },
+        "price": "320",
+        "priceCurrency": "ZAR"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Scissor Cut",
+          "description": "Scissor-over-comb throughout. Soft, textured and grown-in — no clipper lines.",
+          "category": "Cuts"
+        },
+        "price": "300",
+        "priceCurrency": "ZAR"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Student Cut",
+          "description": "Full Signature Cut at a student rate. Valid student card required. Tuesday to Friday.",
+          "category": "Cuts"
+        },
+        "price": "220",
+        "priceCurrency": "ZAR"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Kids Cut",
+          "description": "Under 12s. Patient, unhurried, and a booster seat for the little ones. No fuss.",
+          "category": "Cuts"
+        },
+        "price": "180",
+        "priceCurrency": "ZAR"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Beard Sculpt",
+          "description": "Shaped, lined and trimmed to your face. Hot towel, beard oil and balm to finish.",
+          "category": "Beard & Shave"
+        },
+        "price": "180",
+        "priceCurrency": "ZAR"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Hot Towel Shave",
+          "description": "The full traditional shave. Pre-shave oil, hot towels, straight razor, cold towel, balm.",
+          "category": "Beard & Shave"
+        },
+        "price": "260",
+        "priceCurrency": "ZAR"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Head Shave",
+          "description": "Clean razor head shave with hot towels, finished with a soothing scalp balm.",
+          "category": "Beard & Shave"
+        },
+        "price": "240",
+        "priceCurrency": "ZAR"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "The Full Service",
+          "description": "Signature Cut, Beard Sculpt and a Hot Towel Shave finish. Ninety minutes in the chair, and a complimentary drink.",
+          "category": "Packages"
+        },
+        "price": "580",
+        "priceCurrency": "ZAR"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Cut & Beard",
+          "description": "Signature Cut paired with a full Beard Sculpt. The standing appointment most of our regulars keep.",
+          "category": "Packages"
+        },
+        "price": "420",
+        "priceCurrency": "ZAR"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Father & Son",
+          "description": "One Signature Cut and one Kids Cut, side by side in adjacent chairs. Booked as a single appointment.",
+          "category": "Packages"
+        },
+        "price": "420",
+        "priceCurrency": "ZAR"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Line-Up",
+          "description": "Edges, hairline and neck sharpened up. Keeps a cut looking fresh into week three.",
+          "category": "Finishing Touches"
+        },
+        "price": "120",
+        "priceCurrency": "ZAR"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Grey Blending",
+          "description": "Softens the grey rather than covering it. Subtle, natural, and grows out cleanly.",
+          "category": "Finishing Touches"
+        },
+        "price": "150",
+        "priceCurrency": "ZAR"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Scalp Treatment",
+          "description": "Exfoliating scrub, massage and tonic. For dryness, flaking or simply because it feels good.",
+          "category": "Finishing Touches"
+        },
+        "price": "200",
+        "priceCurrency": "ZAR"
+      }
+    ]
+  },
+  "sameAs": [
+    "https://www.instagram.com/",
+    "https://www.facebook.com/",
+    "https://www.tiktok.com/"
+  ],
+  "potentialAction": {
+    "@type": "ReserveAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://sigz-dev.github.io/kennys-barbering-co/booking.html",
+      "actionPlatform": [
+        "https://schema.org/DesktopWebPlatform",
+        "https://schema.org/MobileWebPlatform"
+      ]
+    },
+    "result": {
+      "@type": "Reservation",
+      "name": "Barbershop appointment"
+    }
+  }
+}
+  </script>
+
+</head>
+<body>
+<script>document.documentElement.classList.remove('no-js');</script>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="header" id="siteHeader" data-header>
+    <div class="header__inner">
+      <a class="logo" href="index.html" aria-label="Kenny's Barbering Co. — home">
+        <svg class="logomark" viewBox="0 0 120 120" role="img" aria-label="Kenny's Barbering Co. monogram" focusable="false">
+  <circle cx="60" cy="60" r="56" fill="none" stroke="var(--brass)" stroke-width="3"/>
+  <circle cx="60" cy="60" r="48" fill="none" stroke="var(--brass)" stroke-width="1.25" opacity=".55"/>
+  <g stroke="var(--bone)" stroke-width="7" stroke-linecap="square" fill="none">
+    <path d="M47 38V82"/>
+    <path d="M47 60 69 38"/>
+    <path d="M47 60 71 82"/>
+  </g>
+  <path d="M38 91h44" stroke="var(--brass)" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
+
+        <span class="logo__text">
+          <span class="logo__word">KENNY'S</span>
+          <span class="logo__sub">BARBERING CO.</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="services.html">Services</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link" href="gallery.html">Gallery</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__tail">
+        <a class="btn btn--primary btn--sm header__cta" href="booking.html">Book Now</a>
+        <button class="burger" type="button" data-burger aria-expanded="false"
+                aria-controls="mobileNav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobilenav" id="mobileNav" data-mobilenav hidden>
+    <nav aria-label="Mobile">
+      <ul class="mobilenav__list">
+        <li class="mobilenav__item"><a class="mobilenav__link" href="services.html"><span class="mobilenav__num">01</span>Services</a></li>
+            <li class="mobilenav__item"><a class="mobilenav__link" href="about.html"><span class="mobilenav__num">02</span>About</a></li>
+            <li class="mobilenav__item"><a class="mobilenav__link" href="gallery.html"><span class="mobilenav__num">03</span>Gallery</a></li>
+            <li class="mobilenav__item"><a class="mobilenav__link" href="contact.html"><span class="mobilenav__num">04</span>Contact</a></li>
+      </ul>
+    </nav>
+    <div class="mobilenav__foot">
+      <a class="btn btn--primary btn--block" href="booking.html">Book an appointment</a>
+      <div class="mobilenav__contact">
+        <a href="tel:+27114478820">+27 11 447 8820</a>
+        <span>Shop 4, 14 Fourth Avenue, Parkhurst</span>
+      </div>
+    </div>
+  </div>
+
+
+<main id="main">
+
+  <section class="pagehead">
+    <div class="shell">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span aria-hidden="true">/</span> <span>Book</span>
+      </nav>
+      <p class="eyebrow">Four quick steps</p>
+      <h1 class="pagehead__title">Book your chair</h1>
+      <p class="lead pagehead__lead">
+        Choose what you&rsquo;re after, pick your barber and a time that suits.
+        We&rsquo;ll show you exactly what&rsquo;s free, and you can drop the
+        appointment straight into your calendar at the end.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="book-h">
+    <div class="shell">
+      <h2 class="u-sr-only" id="book-h">Booking form</h2>
+
+      <noscript>
+        <div class="formnote" style="margin-bottom:2rem">
+          <div>
+            <strong style="color:var(--bone)">Online booking needs JavaScript.</strong>
+            <p style="margin-top:.5rem">
+              Give us a call on <a href="tel:+27114478820" style="color:var(--brass)">+27 11 447 8820</a>
+              or WhatsApp <a href="https://wa.me/27825550147" style="color:var(--brass)">+27 82 555 0147</a>
+              and we&rsquo;ll book you in. We&rsquo;re open Tuesday to Sunday.
+            </p>
+            <p style="margin-top:.75rem">Our services and prices:</p>
+            <ul style="margin-top:.5rem;padding-left:1.25rem">
+              <li><strong>Signature Cut</strong> &mdash; R280, 45 min</li>
+              <li><strong>Skin Fade</strong> &mdash; R320, 45 min</li>
+              <li><strong>Scissor Cut</strong> &mdash; R300, 45 min</li>
+              <li><strong>Student Cut</strong> &mdash; R220, 45 min</li>
+              <li><strong>Kids Cut</strong> &mdash; R180, 30 min</li>
+              <li><strong>Beard Sculpt</strong> &mdash; R180, 30 min</li>
+              <li><strong>Hot Towel Shave</strong> &mdash; R260, 45 min</li>
+              <li><strong>Head Shave</strong> &mdash; R240, 30 min</li>
+              <li><strong>The Full Service</strong> &mdash; R580, 1 hr 30 min</li>
+              <li><strong>Cut & Beard</strong> &mdash; R420, 1 hr 15 min</li>
+              <li><strong>Father & Son</strong> &mdash; R420, 1 hr 15 min</li>
+              <li><strong>Line-Up</strong> &mdash; R120, 15 min</li>
+              <li><strong>Grey Blending</strong> &mdash; R150, 30 min</li>
+              <li><strong>Scalp Treatment</strong> &mdash; R200, 30 min</li>
+            </ul>
+          </div>
+        </div>
+      </noscript>
+
+      <div class="book" data-booking>
+        <div>
+          <span data-book-top></span>
+
+          <ol class="steps" data-steps aria-label="Booking progress">
+            <li class="steps__item is-current" aria-current="step">
+              <span class="steps__n">01</span><span class="steps__label">Service</span>
+            </li>
+            <li class="steps__item">
+              <span class="steps__n">02</span><span class="steps__label">Barber</span>
+            </li>
+            <li class="steps__item">
+              <span class="steps__n">03</span><span class="steps__label">Date &amp; time</span>
+            </li>
+            <li class="steps__item">
+              <span class="steps__n">04</span><span class="steps__label">Your details</span>
+            </li>
+            <li class="steps__item">
+              <span class="steps__n">05</span><span class="steps__label">Confirmed</span>
+            </li>
+          </ol>
+
+          <div class="formnote" data-promo-applied hidden style="margin-bottom:1.5rem">
+            <div>
+              <strong style="color:var(--bone)">Your first-visit discount is saved.</strong>
+              Mention code <strong style="color:var(--brass)" data-promo-value>SHARP15</strong>
+              when you arrive and we&rsquo;ll take 15% off.
+            </div>
+          </div>
+
+          <!-- ============ STEP 1 — SERVICE ============ -->
+          <section class="step is-active" data-step="1" aria-labelledby="s1-h">
+            <div class="step__head">
+              <h3 class="step__title" id="s1-h">What are you booking?</h3>
+              <p class="step__lead">
+                Pick one service. Every appointment includes a consultation and a
+                hot towel finish.
+              </p>
+            </div>
+            <div data-service-options></div>
+            <div class="stepnav">
+              <button class="btn btn--primary" type="button" data-next="1" disabled aria-disabled="true">
+                Choose your barber
+                <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </section>
+
+          <!-- ============ STEP 2 — BARBER ============ -->
+          <section class="step" data-step="2" aria-labelledby="s2-h" hidden>
+            <div class="step__head">
+              <h3 class="step__title" id="s2-h">Who&rsquo;s cutting?</h3>
+              <p class="step__lead">
+                Each barber has a fixed day off, and the calendar will only offer
+                you days they&rsquo;re actually in.
+              </p>
+            </div>
+            <div data-barber-options></div>
+            <div class="stepnav">
+              <button class="btn btn--ghost" type="button" data-back="2">Back</button>
+              <button class="btn btn--primary" type="button" data-next="2" disabled aria-disabled="true">
+                Pick a date &amp; time
+                <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </section>
+
+          <!-- ============ STEP 3 — DATE & TIME ============ -->
+          <section class="step" data-step="3" aria-labelledby="s3-h" hidden>
+            <div class="step__head">
+              <h3 class="step__title" id="s3-h">When suits you?</h3>
+              <p class="step__lead">
+                Greyed-out days are ones we&rsquo;re closed, your barber is off,
+                or everything&rsquo;s already taken.
+              </p>
+            </div>
+
+            <div class="split" style="gap:2rem;align-items:start">
+              <div data-calendar></div>
+              <div data-slots></div>
+            </div>
+
+            <div class="stepnav">
+              <button class="btn btn--ghost" type="button" data-back="3">Back</button>
+              <button class="btn btn--primary" type="button" data-next="3" disabled aria-disabled="true">
+                Add your details
+                <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </section>
+
+          <!-- ============ STEP 4 — DETAILS ============ -->
+          <section class="step" data-step="4" aria-labelledby="s4-h" hidden>
+            <div class="step__head">
+              <h3 class="step__title" id="s4-h">Who should we expect?</h3>
+              <p class="step__lead">
+                We only use these to confirm your appointment and to reach you if
+                anything changes.
+              </p>
+            </div>
+
+            <form class="formgrid formgrid--2" data-details-form novalidate>
+              <div class="field">
+                <label class="field__label" for="bk-name">
+                  Full name <span class="field__req" aria-hidden="true">*</span>
+                </label>
+                <input class="input" id="bk-name" name="name" type="text"
+                       autocomplete="name" data-validate="name" required
+                       placeholder="Sipho Mahlangu">
+                <p class="field__error" id="bk-name-err"></p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="bk-phone">
+                  Mobile number <span class="field__req" aria-hidden="true">*</span>
+                </label>
+                <input class="input" id="bk-phone" name="phone" type="tel"
+                       autocomplete="tel" inputmode="tel" data-validate="phone" required
+                       placeholder="082 555 0147">
+                <p class="field__error"></p>
+              </div>
+
+              <div class="field field--full">
+                <label class="field__label" for="bk-email">
+                  Email <span class="field__req" aria-hidden="true">*</span>
+                </label>
+                <input class="input" id="bk-email" name="email" type="email"
+                       autocomplete="email" inputmode="email" data-validate="email" required
+                       placeholder="you@example.co.za">
+                <p class="field__error"></p>
+                <p class="field__hint">Your confirmation and calendar invite go here.</p>
+              </div>
+
+              <div class="field field--full">
+                <label class="field__label" for="bk-notes">Anything we should know?</label>
+                <textarea class="textarea" id="bk-notes" name="notes"
+                          placeholder="First time in, growing out a fade, allergic to a product — anything helps."></textarea>
+                <p class="field__hint">Optional.</p>
+              </div>
+
+              <div class="field field--full">
+                <label class="checkline">
+                  <input type="checkbox" name="terms" required>
+                  <span>
+                    I&rsquo;ve read and accept the
+                    <a href="terms.html" target="_blank" rel="noopener">Terms &amp; Conditions</a>,
+                    including the 24-hour cancellation policy.
+                    <span class="field__req" aria-hidden="true">*</span>
+                  </span>
+                </label>
+                <p class="field__error"></p>
+              </div>
+
+              <div class="field--full">
+                <div class="stepnav">
+                  <button class="btn btn--ghost" type="button" data-back="4">Back</button>
+                  <button class="btn btn--primary" type="submit">
+                    Confirm booking
+                    <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </section>
+
+          <!-- ============ STEP 5 — CONFIRMATION ============ -->
+          <section class="step" data-step="5" aria-labelledby="s5-h" hidden>
+            <h3 class="u-sr-only" id="s5-h">Booking confirmed</h3>
+            <div class="confirm" data-confirm></div>
+          </section>
+        </div>
+
+        <!-- ============ SUMMARY RAIL ============ -->
+        <aside class="summary" data-summary-rail aria-label="Your booking so far">
+          <h2 class="summary__title">Your booking</h2>
+
+          <div class="summary__row">
+            <span class="summary__k">Service</span>
+            <span class="summary__v is-empty" data-summary="service">Not chosen yet</span>
+          </div>
+          <div class="summary__row">
+            <span class="summary__k">Barber</span>
+            <span class="summary__v is-empty" data-summary="barber">Not chosen yet</span>
+          </div>
+          <div class="summary__row">
+            <span class="summary__k">Date</span>
+            <span class="summary__v is-empty" data-summary="date">Not chosen yet</span>
+          </div>
+          <div class="summary__row">
+            <span class="summary__k">Time</span>
+            <span class="summary__v is-empty" data-summary="time">Not chosen yet</span>
+          </div>
+
+          <div class="summary__total">
+            <span class="summary__totalk">Total <span data-summary-duration></span></span>
+            <span class="summary__totalv" data-summary-total>&mdash;</span>
+          </div>
+
+          <p class="summary__note">
+            Payable in store by card, cash, SnapScan or Zapper. No deposit needed.
+            Free to change or cancel up to 24 hours before.
+          </p>
+        </aside>
+      </div>
+
+      <!-- ============ SAVED BOOKINGS ============ -->
+      <section class="saved" data-saved hidden aria-labelledby="saved-h">
+        <div class="sechead">
+          <p class="eyebrow">On this device</p>
+          <h2 class="sechead__title" style="font-size:var(--t-d3)" id="saved-h">
+            Your upcoming appointments
+          </h2>
+          <p class="lead sechead__lead" style="font-size:var(--t-sm)">
+            Saved in this browser so you can add them to your calendar again
+            whenever you need.
+          </p>
+        </div>
+        <div class="saved__list" data-saved-list></div>
+      </section>
+
+    </div>
+  </section>
+
+  <section class="section section--tight section--raise section--line">
+    <div class="shell">
+      <div class="values">
+        <article class="value">
+          <p class="value__num">Walk-ins</p>
+          <h3 class="value__title">No booking? Still come.</h3>
+          <p class="value__body">
+            We take walk-ins whenever a chair is free. Saturdays fill up by
+            mid-morning, so booking is the safer bet.
+          </p>
+        </article>
+        <article class="value">
+          <p class="value__num">Running late</p>
+          <h3 class="value__title">We hold for ten minutes.</h3>
+          <p class="value__body">
+            Past that we may need to shorten the service or rebook you. A quick
+            call on <a href="tel:+27114478820" style="color:var(--brass)">+27 11 447 8820</a> always helps.
+          </p>
+        </article>
+        <article class="value">
+          <p class="value__num">Changes</p>
+          <h3 class="value__title">Free up to 24 hours before.</h3>
+          <p class="value__body">
+            Call or WhatsApp and we&rsquo;ll move it at no charge. See the
+            <a href="terms.html" style="color:var(--brass)">full policy</a>.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+  <footer class="footer">
+    <div class="shell">
+      <div class="footer__grid">
+
+        <div class="footer__brandcol">
+          <a class="logo" href="index.html" aria-label="Kenny's Barbering Co. — home">
+            <svg class="logomark" viewBox="0 0 120 120" role="img" aria-label="Kenny's Barbering Co. monogram" focusable="false">
+  <circle cx="60" cy="60" r="56" fill="none" stroke="var(--brass)" stroke-width="3"/>
+  <circle cx="60" cy="60" r="48" fill="none" stroke="var(--brass)" stroke-width="1.25" opacity=".55"/>
+  <g stroke="var(--bone)" stroke-width="7" stroke-linecap="square" fill="none">
+    <path d="M47 38V82"/>
+    <path d="M47 60 69 38"/>
+    <path d="M47 60 71 82"/>
+  </g>
+  <path d="M38 91h44" stroke="var(--brass)" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
+
+            <span class="logo__text">
+              <span class="logo__word">KENNY'S</span>
+              <span class="logo__sub">BARBERING CO.</span>
+            </span>
+          </a>
+          <p class="footer__blurb">
+            A four-chair barbershop on Fourth Avenue, Parkhurst. Same corner,
+            same founder, same standard since 1998.
+          </p>
+          <div class="socials">
+            <a class="social" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram: @kennysbarbering (opens in a new tab)" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 1.8.25 2.2.42.6.22 1 .48 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c0 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2 0-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c0-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.07-1.1.05-1.7.24-2.1.4-.5.2-.9.44-1.3.84-.4.4-.64.8-.84 1.3-.16.4-.35 1-.4 2.1C2.6 9.9 2.6 10.3 2.6 13.4s0 3.5.06 4.7c.05 1.1.24 1.7.4 2.1.2.5.44.9.84 1.3.4.4.8.64 1.3.84.4.16 1 .35 2.1.4 1.2.06 1.6.06 4.7.06s3.5 0 4.7-.06c1.1-.05 1.7-.24 2.1-.4.5-.2.9-.44 1.3-.84.4-.4.64-.8.84-1.3.16-.4.35-1 .4-2.1.06-1.2.06-1.6.06-4.7s0-3.5-.06-4.7c-.05-1.1-.24-1.7-.4-2.1-.2-.5-.44-.9-.84-1.3-.4-.4-.8-.64-1.3-.84-.4-.16-1-.35-2.1-.4C15.5 4 15.1 4 12 4z"/><path d="M12 7.1a4.9 4.9 0 100 9.8 4.9 4.9 0 000-9.8zm0 8.08a3.18 3.18 0 110-6.36 3.18 3.18 0 010 6.36z"/><circle cx="17.1" cy="6.9" r="1.15"/></svg></a>
+            <a class="social" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook: Kenny&#x27;s Barbering Co. (opens in a new tab)" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5h1.65V3.62A22 22 0 0014.3 3.5c-2.4 0-4 1.45-4 4.12V9.9H7.6V13h2.7v8z"/></svg></a>
+            <a class="social" href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok: @kennysbarbering (opens in a new tab)" title="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16.6 5.82A4.28 4.28 0 0115.54 3h-3.1v12.4a2.59 2.59 0 01-2.6 2.5 2.6 2.6 0 01-2.6-2.6 2.6 2.6 0 013.3-2.5v-3.13a5.7 5.7 0 00-6.4 5.63A5.7 5.7 0 009.84 21a5.7 5.7 0 005.7-5.7V9.01a7.35 7.35 0 004.3 1.38v-3.1a4.3 4.3 0 01-3.24-1.47z"/></svg></a>
+            <a class="social" href="https://wa.me/27825550147" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp us on +27 82 555 0147 (opens in a new tab)" title="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15s-.76.96-.94 1.16c-.17.2-.34.22-.63.08a8.1 8.1 0 01-2.4-1.48 9 9 0 01-1.66-2.06c-.17-.3 0-.45.13-.6.13-.13.3-.34.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.48-.5-.67-.5h-.57c-.2 0-.52.07-.8.37-.26.3-1.03 1-1.03 2.45s1.06 2.85 1.2 3.05c.16.2 2.08 3.18 5.04 4.46.7.3 1.25.48 1.68.62.7.22 1.35.2 1.86.12.57-.09 1.75-.72 2-1.41.24-.7.24-1.28.17-1.41-.07-.13-.27-.2-.56-.35z"/><path d="M12.04 2a9.9 9.9 0 00-8.5 14.94L2 22.1l5.3-1.39A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 11-4.12 15.08l-.3-.18-3.14.82.84-3.06-.2-.31A8.1 8.1 0 0112.04 3.8z"/></svg></a>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="footer__title">Explore</h2>
+          <ul class="footer__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="footer__title">Visit us</h2>
+          <address class="footer__contact">
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=-26.1417,28.0186"
+               target="_blank" rel="noopener noreferrer">
+              Shop 4, 14 Fourth Avenue<br>
+              Parkhurst, Johannesburg<br>
+              2193
+            </a>
+            <a href="tel:+27114478820">+27 11 447 8820</a>
+            <a href="https://wa.me/27825550147" target="_blank" rel="noopener noreferrer">
+              WhatsApp +27 82 555 0147
+            </a>
+            <a href="mailto:hello@kennys.co.za">hello@kennys.co.za</a>
+          </address>
+        </div>
+
+        <div>
+          <h2 class="footer__title">Opening hours</h2>
+          <div class="fhours" data-fhours>
+            <div class="fhours__row" data-dow="1"><span>Mon</span><span class="is-closed">Closed</span></div>
+              <div class="fhours__row" data-dow="2"><span>Tue</span><span>09:00&ndash;19:00</span></div>
+              <div class="fhours__row" data-dow="3"><span>Wed</span><span>09:00&ndash;19:00</span></div>
+              <div class="fhours__row" data-dow="4"><span>Thu</span><span>09:00&ndash;19:00</span></div>
+              <div class="fhours__row" data-dow="5"><span>Fri</span><span>09:00&ndash;19:00</span></div>
+              <div class="fhours__row" data-dow="6"><span>Sat</span><span>08:00&ndash;17:00</span></div>
+              <div class="fhours__row" data-dow="0"><span>Sun</span><span>10:00&ndash;15:00</span></div>
+          </div>
+          <p style="margin-top:1rem">
+            <span class="openbadge is-closed" data-openbadge>Checking&hellip;</span>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer__bar">
+        <p>&copy; 2026 Kenny's Barbering Co.. All rights reserved.</p>
+        <ul class="footer__legal">
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="contact.html#faq">FAQs</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+        </ul>
+        <p class="footer__credit">Reg. 1998/004471/23 &middot; Parkhurst, Johannesburg</p>
+      </div>
+    </div>
+  </footer>
+
+
+<div class="toast" data-toast role="status" aria-live="polite">
+  <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span data-toast-text></span>
+</div>
+
+<script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>

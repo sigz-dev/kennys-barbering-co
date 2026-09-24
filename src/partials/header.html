@@ -1,0 +1,42 @@
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="header" id="siteHeader" data-header>
+    <div class="header__inner">
+      <a class="logo" href="index.html" aria-label="{{ brand.legalName }} — home">
+        {{> logo-mark }}
+        <span class="logo__text">
+          <span class="logo__word">{{ brand.name }}</span>
+          <span class="logo__sub">BARBERING CO.</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav__list">
+          {{ nav_links }}
+        </ul>
+      </nav>
+
+      <div class="header__tail">
+        <a class="btn btn--primary btn--sm header__cta" href="booking.html">Book Now</a>
+        <button class="burger" type="button" data-burger aria-expanded="false"
+                aria-controls="mobileNav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobilenav" id="mobileNav" data-mobilenav hidden>
+    <nav aria-label="Mobile">
+      <ul class="mobilenav__list">
+        {{ mobile_nav_links }}
+      </ul>
+    </nav>
+    <div class="mobilenav__foot">
+      <a class="btn btn--primary btn--block" href="booking.html">Book an appointment</a>
+      <div class="mobilenav__contact">
+        <a href="tel:{{ contact.phoneHref }}">{{ contact.phoneDisplay }}</a>
+        <span>{{ contact.addressLine }}, {{ contact.suburb }}</span>
+      </div>
+    </div>
+  </div>

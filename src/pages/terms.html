@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en-ZA" class="no-js">
+<head>
+{{> head }}
+</head>
+<body>
+<script>document.documentElement.classList.remove('no-js');</script>
+
+{{> header }}
+
+<main id="main">
+
+  <section class="pagehead">
+    <div class="shell shell--narrow">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span aria-hidden="true">/</span> <span>Terms &amp; Conditions</span>
+      </nav>
+      <p class="eyebrow">Legal</p>
+      <h1 class="pagehead__title">Terms &amp; Conditions</h1>
+      <p class="lead pagehead__lead">
+        The terms below apply to appointments, services and purchases at
+        {{ brand.legalName }}. We&rsquo;ve tried to keep them in plain language.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell shell--narrow">
+      <p class="prose__meta">
+        Last updated 1 September {{ year }} &middot; Effective immediately &middot;
+        Governed by the laws of South Africa
+      </p>
+
+      <nav class="toc" aria-labelledby="toc-h">
+        <p class="toc__title" id="toc-h">On this page</p>
+        <ol>
+          <li><a href="#t-who">Who we are</a></li>
+          <li><a href="#t-booking">Making a booking</a></li>
+          <li><a href="#t-changes">Changes, cancellations &amp; no-shows</a></li>
+          <li><a href="#t-late">Running late</a></li>
+          <li><a href="#t-prices">Prices &amp; payment</a></li>
+          <li><a href="#t-redo">Our redo promise &amp; refunds</a></li>
+          <li><a href="#t-children">Children &amp; under-16s</a></li>
+          <li><a href="#t-health">Health, skin &amp; allergies</a></li>
+          <li><a href="#t-conduct">Conduct in the shop</a></li>
+          <li><a href="#t-vouchers">Gift vouchers &amp; promotions</a></li>
+          <li><a href="#t-property">Personal property</a></li>
+          <li><a href="#t-photos">Photography</a></li>
+          <li><a href="#t-data">Your personal information</a></li>
+          <li><a href="#t-website">This website</a></li>
+          <li><a href="#t-liability">Liability</a></li>
+          <li><a href="#t-complaints">Complaints &amp; disputes</a></li>
+          <li><a href="#t-law">Governing law</a></li>
+          <li><a href="#t-updates">Changes to these terms</a></li>
+        </ol>
+      </nav>
+
+      <div class="prose">
+
+        <h2 id="t-who">1. Who we are</h2>
+        <p>
+          {{ brand.legalName }} (&ldquo;Kenny&rsquo;s&rdquo;, &ldquo;we&rdquo;,
+          &ldquo;us&rdquo;) is a barbershop trading at {{ contact.addressFull }},
+          registration number 1998/004471/23.
+        </p>
+        <p>
+          You can reach us on <a href="tel:{{ contact.phoneHref }}">{{ contact.phoneDisplay }}</a>,
+          by WhatsApp on <a href="https://wa.me/{{ contact.whatsappHref }}" target="_blank" rel="noopener noreferrer">{{ contact.whatsappDisplay }}</a>,
+          or by email at <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>.
+        </p>
+        <p>
+          By booking an appointment, buying a service or a gift voucher, or using
+          this website, you agree to these terms.
+        </p>
+
+        <h2 id="t-booking">2. Making a booking</h2>
+        <ul>
+          <li>Appointments can be booked through this website, by phone, by WhatsApp, or in person at the shop.</li>
+          <li>A booking is confirmed once you receive a booking reference. Your reference begins with <strong>KB-</strong> and is shown on screen as soon as you finish booking.</li>
+          <li>We do not take a deposit for standard appointments. Bookings of four or more people in one party may require a deposit, which we will agree with you in advance.</li>
+          <li>Each appointment is for one service and one person, unless you have booked the Father &amp; Son package, which covers two people in adjacent chairs.</li>
+          <li>Times shown on this website are South African Standard Time (SAST, UTC+2) and reflect the start of your appointment, not your arrival time.</li>
+          <li>We may need to move a booking if a barber is unexpectedly unavailable. We will contact you as early as we can and offer the nearest alternative or a full refund of anything already paid.</li>
+          <li>Walk-ins are welcome whenever a chair is free, but booked appointments always take priority.</li>
+        </ul>
+
+        <h2 id="t-changes">3. Changes, cancellations &amp; no-shows</h2>
+        <p>
+          We understand that plans change. We simply ask for reasonable notice so
+          the chair can go to someone else.
+        </p>
+        <ul>
+          <li><strong>24 hours or more notice:</strong> change or cancel free of charge. Call or WhatsApp us and we will rebook you at a time that suits.</li>
+          <li><strong>Less than 24 hours notice:</strong> we may ask for 50% of the service price before we accept your next booking.</li>
+          <li><strong>No-show:</strong> if you do not arrive and do not contact us, we may ask for the full service price, or payment in advance, before taking a future booking.</li>
+          <li>These charges are discretionary. We have never applied them to someone who called ahead, and we take genuine emergencies as exactly that.</li>
+          <li>If <em>we</em> cancel or materially change your appointment, you are entitled to a full refund of anything paid, or a rebooking at no charge, at your choice.</li>
+        </ul>
+
+        <h2 id="t-late">4. Running late</h2>
+        <p>
+          We hold your chair for <strong>ten minutes</strong> past your booked
+          start time. After that, the barber may need to start the next
+          appointment on time.
+        </p>
+        <ul>
+          <li>If you arrive within the ten minutes, we will do our best to complete the full service.</li>
+          <li>If you arrive later, we may need to shorten the service to fit the remaining time, or rebook you. The full price still applies to a shortened service that you agree to proceed with.</li>
+          <li>A quick phone call almost always lets us rearrange things. Please call rather than simply arriving late.</li>
+        </ul>
+
+        <h2 id="t-prices">5. Prices &amp; payment</h2>
+        <ul>
+          <li>All prices are in South African Rand and include VAT where applicable.</li>
+          <li>Prices shown on our <a href="services.html">Services page</a> are current at the time of publication and may change. The price quoted to you at the time of booking is the price you pay for that appointment.</li>
+          <li>Payment is taken in store after your appointment. We accept card, cash, SnapScan and Zapper.</li>
+          <li>The Student Cut rate is available Tuesday to Friday on presentation of a valid student card.</li>
+          <li>Kids Cut pricing applies to children under 12.</li>
+          <li>Package prices apply only when all services in that package are performed in the same appointment.</li>
+          <li>Additional work that you request during your appointment and that falls outside the booked service is charged at the rates on our Services page, and will always be discussed with you first.</li>
+          <li>Tipping is entirely at your discretion and never expected.</li>
+        </ul>
+
+        <h2 id="t-redo">6. Our redo promise &amp; refunds</h2>
+        <p>
+          A haircut is a service, not a product, and cannot be returned. What we
+          can do is put it right.
+        </p>
+        <ul>
+          <li>If you are not happy with your cut, tell us while you are still in the chair wherever possible. Most things can be corrected in a few minutes.</li>
+          <li>If you notice something after you leave, contact us within <strong>seven days</strong> and we will book you in with the same barber, or a different one if you would prefer, to correct it at no charge.</li>
+          <li>The redo promise covers correcting the work we performed. It does not cover a change of mind about the style you asked for, growth since the appointment, or work done elsewhere.</li>
+          <li>Refunds are considered case by case where a redo is not appropriate. Nothing in these terms limits your rights under the Consumer Protection Act 68 of 2008.</li>
+        </ul>
+
+        <h2 id="t-children">7. Children &amp; under-16s</h2>
+        <ul>
+          <li>Kids Cuts are for children under 12.</li>
+          <li>Anyone under 16 must be accompanied by a parent or guardian who remains in the shop for the whole appointment.</li>
+          <li>A parent or guardian must agree the style before we begin.</li>
+          <li>If a child becomes distressed, we will stop. We will only charge for work actually completed, and often for nothing at all.</li>
+        </ul>
+
+        <h2 id="t-health">8. Health, skin &amp; allergies</h2>
+        <ul>
+          <li>Please tell your barber before the appointment begins about any skin condition, allergy, recent surgery, scalp sensitivity, or medication that affects your skin or hair.</li>
+          <li>We use products containing common cosmetic ingredients. If you have a known sensitivity, ask us and we will check the ingredients with you or use an alternative.</li>
+          <li>For <strong>Grey Blending</strong> we require a patch test at least 48 hours before your first colour appointment. This is a safety requirement and we cannot waive it.</li>
+          <li>We may decline to perform a service where we believe there is a risk to your skin or health, or where an active scalp or skin infection is present.</li>
+          <li>Razor services carry a small inherent risk of nicks or irritation. We use a fresh blade for every client and sterilise all tools between appointments.</li>
+        </ul>
+
+        <h2 id="t-conduct">9. Conduct in the shop</h2>
+        <p>
+          Our barbers and our customers are entitled to a calm, respectful space.
+          We reserve the right to refuse or stop a service, without refund, where
+          someone is abusive, threatening, discriminatory, or noticeably
+          intoxicated.
+        </p>
+
+        <h2 id="t-vouchers">10. Gift vouchers &amp; promotions</h2>
+        <ul>
+          <li>Gift vouchers are valid for <strong>twelve months</strong> from the date of issue and are shown on the voucher itself.</li>
+          <li>Vouchers may be used against any service or retail product. They are not exchangeable for cash and we cannot give cash change on a voucher.</li>
+          <li>If a service costs more than the voucher value, the difference is payable in store.</li>
+          <li>We cannot replace a lost or stolen voucher unless you can give us the voucher number.</li>
+          <li>The first-visit discount code <strong>{{ offer.code }}</strong> is valid for first-time customers on a single appointment, cannot be combined with package pricing or the student rate, and must be mentioned when you arrive.</li>
+          <li>Only one promotional discount may be applied per appointment.</li>
+        </ul>
+
+        <h2 id="t-property">11. Personal property</h2>
+        <p>
+          Please keep your belongings with you. We cannot accept responsibility
+          for loss of or damage to personal property brought into the shop, except
+          where the loss is caused by our negligence. Cutting hair involves loose
+          hair, water and product, so we recommend using the gown and hooks
+          provided.
+        </p>
+
+        <h2 id="t-photos">12. Photography</h2>
+        <p>
+          We sometimes photograph our work for the <a href="gallery.html">gallery</a>
+          and social media. We will always ask you first, and you are free to say
+          no &mdash; it will not affect your appointment in any way. If you have
+          previously agreed and later change your mind, email
+          <a href="mailto:{{ contact.email }}">{{ contact.email }}</a> and we will
+          remove the image from anything we control.
+        </p>
+
+        <h2 id="t-data">13. Your personal information</h2>
+        <p>
+          We collect only what we need to run your appointment: your name, mobile
+          number, email address and any notes you choose to give us. How we handle
+          that information, and the rights you have over it under the Protection
+          of Personal Information Act 4 of 2013 (POPIA), is set out in our
+          <a href="privacy.html">Privacy Policy</a>.
+        </p>
+
+        <h2 id="t-website">14. This website</h2>
+        <ul>
+          <li>We aim to keep prices, opening hours and availability accurate, but this website is provided on an &ldquo;as is&rdquo; basis and may occasionally contain errors.</li>
+          <li>Availability shown in the booking calendar reflects the shop&rsquo;s schedule at the time you load the page. Very occasionally a slot may be taken between you loading the page and completing your booking; if that happens we will contact you to rearrange.</li>
+          <li>The <em>add to calendar</em> feature creates an event in your own calendar application. That event is a convenience for you and is not itself a confirmation from us &mdash; your booking reference is.</li>
+          <li>Your booking details are stored in your own browser so that you can retrieve them later. Clearing your browser data will remove them. This does not cancel your appointment.</li>
+          <li>All content, branding, photography and code on this site belong to {{ brand.legalName }} or are used under licence, and may not be reproduced without permission.</li>
+          <li>Links to third-party sites are provided for convenience. We are not responsible for their content or practices.</li>
+        </ul>
+
+        <h2 id="t-liability">15. Liability</h2>
+        <p>
+          Nothing in these terms excludes or limits our liability for death or
+          personal injury caused by our negligence, for fraud, or for anything
+          else that cannot lawfully be excluded, including your rights under the
+          Consumer Protection Act.
+        </p>
+        <p>
+          Subject to that, our total liability to you in connection with any
+          appointment is limited to the price paid for that appointment.
+        </p>
+
+        <h2 id="t-complaints">16. Complaints &amp; disputes</h2>
+        <p>
+          If something has gone wrong, please speak to the barber first, or ask
+          for Kenny. Most things are resolved in the shop on the day. If you would
+          rather put it in writing, email
+          <a href="mailto:{{ contact.email }}">{{ contact.email }}</a> and we will
+          acknowledge within two working days and aim to resolve within ten.
+        </p>
+        <p>
+          If we cannot resolve matters between us, you may refer the dispute to
+          the National Consumer Commission.
+        </p>
+
+        <h2 id="t-law">17. Governing law</h2>
+        <p>
+          These terms are governed by the laws of the Republic of South Africa,
+          and the courts of South Africa have jurisdiction over any dispute
+          arising from them.
+        </p>
+
+        <h2 id="t-updates">18. Changes to these terms</h2>
+        <p>
+          We may update these terms from time to time. The version published on
+          this page at the moment you make a booking is the version that applies
+          to that booking. The date at the top of this page shows when it was last
+          revised.
+        </p>
+
+        <p style="margin-top:2.5rem">
+          Questions about any of the above? Email
+          <a href="mailto:{{ contact.email }}">{{ contact.email }}</a> or call
+          <a href="tel:{{ contact.phoneHref }}">{{ contact.phoneDisplay }}</a>.
+        </p>
+      </div>
+
+      <div class="btnrow" style="margin-top:3rem">
+        <a class="btn btn--primary" href="booking.html">Book an appointment</a>
+        <a class="btn btn--ghost" href="privacy.html">Read our Privacy Policy</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{{> footer }}
+
+<div class="toast" data-toast role="status" aria-live="polite">
+  <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span data-toast-text></span>
+</div>
+
+<script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>

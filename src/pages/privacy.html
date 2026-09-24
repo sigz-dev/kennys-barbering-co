@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en-ZA" class="no-js">
+<head>
+{{> head }}
+</head>
+<body>
+<script>document.documentElement.classList.remove('no-js');</script>
+
+{{> header }}
+
+<main id="main">
+
+  <section class="pagehead">
+    <div class="shell shell--narrow">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span aria-hidden="true">/</span> <span>Privacy Policy</span>
+      </nav>
+      <p class="eyebrow">Legal</p>
+      <h1 class="pagehead__title">Privacy Policy</h1>
+      <p class="lead pagehead__lead">
+        What we collect, why we collect it, how long we keep it, and what you can
+        ask us to do with it.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell shell--narrow">
+      <p class="prose__meta">
+        Last updated 1 September {{ year }} &middot; Compliant with POPIA (Act 4 of 2013)
+      </p>
+
+      <nav class="toc" aria-labelledby="ptoc-h">
+        <p class="toc__title" id="ptoc-h">On this page</p>
+        <ol>
+          <li><a href="#p-who">Who is responsible</a></li>
+          <li><a href="#p-what">What we collect</a></li>
+          <li><a href="#p-why">Why we collect it</a></li>
+          <li><a href="#p-browser">What stays in your browser</a></li>
+          <li><a href="#p-share">Who we share it with</a></li>
+          <li><a href="#p-keep">How long we keep it</a></li>
+          <li><a href="#p-secure">How we protect it</a></li>
+          <li><a href="#p-rights">Your rights</a></li>
+          <li><a href="#p-children">Children</a></li>
+          <li><a href="#p-changes">Changes to this policy</a></li>
+          <li><a href="#p-contact">Contact &amp; complaints</a></li>
+        </ol>
+      </nav>
+
+      <div class="prose">
+
+        <h2 id="p-who">1. Who is responsible</h2>
+        <p>
+          {{ brand.legalName }}, of {{ contact.addressFull }}, is the responsible
+          party for the personal information described in this policy, as that
+          term is used in the Protection of Personal Information Act 4 of 2013
+          (POPIA).
+        </p>
+        <p>
+          Our information officer can be reached at
+          <a href="mailto:{{ contact.email }}">{{ contact.email }}</a> or on
+          <a href="tel:{{ contact.phoneHref }}">{{ contact.phoneDisplay }}</a>.
+        </p>
+
+        <h2 id="p-what">2. What we collect</h2>
+        <p>We keep this deliberately small. When you book an appointment we collect:</p>
+        <ul>
+          <li><strong>Your name</strong> &mdash; so we know who to expect and what to call you.</li>
+          <li><strong>Your mobile number</strong> &mdash; so we can reach you if something changes.</li>
+          <li><strong>Your email address</strong> &mdash; so we can send your confirmation.</li>
+          <li><strong>Your appointment details</strong> &mdash; the service, barber, date and time you chose.</li>
+          <li><strong>Any notes you give us</strong> &mdash; entirely optional, and only what you choose to type.</li>
+        </ul>
+        <p>
+          If you tell us about a skin condition, allergy or medical matter
+          relevant to your appointment, that is special personal information under
+          POPIA. We record only what is necessary to perform the service safely,
+          we use it for nothing else, and you can ask us to delete it at any time.
+        </p>
+        <p>
+          We do <strong>not</strong> collect payment card details through this
+          website. All payments happen in store through our card machine or a
+          payment app, and those providers handle the card data, not us.
+        </p>
+
+        <h2 id="p-why">3. Why we collect it</h2>
+        <p>Under POPIA we must have a lawful basis for processing. Ours are:</p>
+        <ul>
+          <li><strong>To perform our agreement with you</strong> &mdash; managing your booking, preparing for your appointment and contacting you about it.</li>
+          <li><strong>Our legitimate interests</strong> &mdash; running the shop, keeping a record of appointments, and managing no-shows fairly.</li>
+          <li><strong>Your consent</strong> &mdash; for anything optional, such as photographing your cut for our gallery. You can withdraw consent at any time.</li>
+          <li><strong>Legal obligation</strong> &mdash; keeping the accounting records the law requires us to keep.</li>
+        </ul>
+        <p>
+          We do not send marketing email unless you have specifically asked us to,
+          and every such message carries an unsubscribe link.
+        </p>
+
+        <h2 id="p-browser">4. What stays in your browser</h2>
+        <p>
+          This website is a static site. It has no user accounts, no login, and no
+          server-side database of customers.
+        </p>
+        <ul>
+          <li>We use <strong>no tracking cookies</strong>, no analytics and no advertising pixels.</li>
+          <li>Your booking details are saved in your own browser&rsquo;s <code>localStorage</code> so that you can look them up and re-add them to your calendar later. That data stays on your device. It is not transmitted to us or to anyone else.</li>
+          <li>We also store a small flag recording that you have seen our first-visit offer, so it is not shown to you repeatedly.</li>
+          <li>Clearing your browser data removes all of the above. It does not cancel an appointment.</li>
+        </ul>
+        <p>
+          The map on our <a href="contact.html">Contact page</a> is embedded from
+          OpenStreetMap, and the <em>add to calendar</em> buttons link to Google
+          Calendar and Outlook. If you use those, the provider concerned will
+          receive a request from your browser and will apply its own privacy
+          policy. Downloading the <code>.ics</code> file instead involves no third
+          party at all.
+        </p>
+
+        <h2 id="p-share">5. Who we share it with</h2>
+        <p>
+          We do not sell, rent or trade your personal information. We share it
+          only with:
+        </p>
+        <ul>
+          <li>the barber who is performing your appointment;</li>
+          <li>our accountants and auditors, where required for financial records;</li>
+          <li>a regulator, court or law enforcement body, where we are legally obliged to.</li>
+        </ul>
+        <p>We do not transfer your personal information outside South Africa.</p>
+
+        <h2 id="p-keep">6. How long we keep it</h2>
+        <ul>
+          <li><strong>Appointment records:</strong> three years from your last visit, so we can honour our redo promise and recognise returning customers.</li>
+          <li><strong>Health and allergy notes:</strong> for as long as you remain a customer, or until you ask us to delete them.</li>
+          <li><strong>Financial records:</strong> five years, as required by South African tax law.</li>
+          <li><strong>Marketing consent:</strong> until you withdraw it.</li>
+        </ul>
+        <p>After those periods we securely delete or anonymise the information.</p>
+
+        <h2 id="p-secure">7. How we protect it</h2>
+        <p>
+          Our booking records are kept on password-protected devices, access is
+          limited to the people who need it, and this website is served over
+          HTTPS. No system is perfect, but we keep the amount of information we
+          hold deliberately small, which is the most effective protection of all.
+        </p>
+
+        <h2 id="p-rights">8. Your rights</h2>
+        <p>Under POPIA you have the right to:</p>
+        <ul>
+          <li><strong>Ask what we hold</strong> about you, and receive a copy.</li>
+          <li><strong>Correct</strong> anything inaccurate or incomplete.</li>
+          <li><strong>Delete</strong> information we no longer have grounds to keep.</li>
+          <li><strong>Object</strong> to processing based on our legitimate interests.</li>
+          <li><strong>Withdraw consent</strong> at any time, where consent was our basis.</li>
+          <li><strong>Complain</strong> to the Information Regulator.</li>
+        </ul>
+        <p>
+          To exercise any of these, email
+          <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>. We will
+          respond within 30 days, and there is no charge for a reasonable request.
+        </p>
+
+        <h2 id="p-children">9. Children</h2>
+        <p>
+          We do not knowingly collect personal information directly from children.
+          Bookings for under-16s are made by a parent or guardian, who provides
+          the contact details and gives consent on the child&rsquo;s behalf.
+        </p>
+
+        <h2 id="p-changes">10. Changes to this policy</h2>
+        <p>
+          If we change how we handle personal information we will update this page
+          and revise the date at the top. Material changes will also be mentioned
+          in the shop.
+        </p>
+
+        <h2 id="p-contact">11. Contact &amp; complaints</h2>
+        <p>
+          Please come to us first &mdash; email
+          <a href="mailto:{{ contact.email }}">{{ contact.email }}</a> or call
+          <a href="tel:{{ contact.phoneHref }}">{{ contact.phoneDisplay }}</a>.
+        </p>
+        <p>
+          If you are not satisfied with our response, you may complain to the
+          Information Regulator (South Africa), JD House, 27 Stiemens Street,
+          Braamfontein, Johannesburg 2001, at
+          <a href="https://inforegulator.org.za/" target="_blank" rel="noopener noreferrer">inforegulator.org.za</a>.
+        </p>
+      </div>
+
+      <div class="btnrow" style="margin-top:3rem">
+        <a class="btn btn--primary" href="booking.html">Book an appointment</a>
+        <a class="btn btn--ghost" href="terms.html">Read our Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{{> footer }}
+
+<div class="toast" data-toast role="status" aria-live="polite">
+  <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span data-toast-text></span>
+</div>
+
+<script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>

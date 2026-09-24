@@ -1,0 +1,24 @@
+{
+  "name": "kennys-barbering-co",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website for Kenny's Barbering Co. — a barbershop in Parkhurst, Johannesburg. Static site, no build dependencies; Node is used only to run the test suite.",
+  "type": "module",
+  "scripts": {
+    "build": "python build.py",
+    "serve": "python -m http.server 8123 --bind 127.0.0.1 --directory docs",
+    "test": "npm run test:links && npm run test:calendar && npm run test:journey && npm run test:a11y",
+    "test:links": "python build.py && python tests/link_audit.py",
+    "test:calendar": "node tests/calendar.test.mjs",
+    "test:journey": "node tests/journey.mjs",
+    "test:a11y": "node tests/a11y.mjs",
+    "shots": "node tests/shots.mjs",
+    "assets:images": "python tests/build_images.py",
+    "assets:fonts": "python tests/fetch_fonts.py",
+    "assets:brand": "python tests/build_brand.py"
+  },
+  "devDependencies": {
+    "axe-core": "^4.10.3",
+    "playwright-core": "^1.56.1"
+  }
+}

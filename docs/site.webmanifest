@@ -1,0 +1,29 @@
+{
+  "name": "Kenny's Barbering Co.",
+  "short_name": "Kenny's",
+  "description": "A four-chair barbershop on Fourth Avenue, Parkhurst. Cuts, skin fades, beard sculpting and traditional hot towel shaves since 1998. Book your chair online.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0E0E10",
+  "theme_color": "#0E0E10",
+  "icons": [
+    {
+      "src": "./assets/logo/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/logo/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/logo/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

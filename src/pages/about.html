@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en-ZA" class="no-js">
+<head>
+{{> head }}
+</head>
+<body>
+<script>document.documentElement.classList.remove('no-js');</script>
+
+{{> header }}
+
+<main id="main">
+
+  <section class="pagehead">
+    <div class="shell">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span aria-hidden="true">/</span> <span>About</span>
+      </nav>
+      <p class="eyebrow">Since {{ brand.established }}</p>
+      <h1 class="pagehead__title">Four chairs, one standard.</h1>
+      <p class="lead pagehead__lead">
+        Twenty-eight years on the same corner of Fourth Avenue. Here&rsquo;s how a
+        one-chair shop became the reason people drive across Johannesburg for a
+        haircut.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="origin-h">
+    <div class="shell">
+      <div class="split">
+        <div class="split__media reveal">
+          <img class="split__img"
+               src="./assets/img/shop-mirrors-1280.jpg"
+               srcset="./assets/img/shop-mirrors-640.jpg 640w, ./assets/img/shop-mirrors-1280.jpg 1280w, ./assets/img/shop-mirrors-1920.jpg 1920w"
+               sizes="(max-width: 900px) 92vw, 45vw"
+               alt="The shop floor at Kenny's — vintage chairs lined up beneath warm lamps."
+               width="1280" height="853" loading="lazy" decoding="async">
+          <div class="stamp">{{> logo-seal }}</div>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">Our story</p>
+          <h2 class="split__title" id="origin-h">A borrowed mirror and a secondhand chair.</h2>
+          <div class="split__body">
+            <p>
+              In 1998 Kenny Mareya took a lease on a narrow unit at the quiet end
+              of Fourth Avenue. He had one chair, a borrowed mirror, a
+              hand-painted sign, and a rule he still repeats to every apprentice:
+              <em>a good cut should still look like a good cut four weeks later.</em>
+            </p>
+            <p>
+              Parkhurst changed around him. The strip filled with restaurants, the
+              rents climbed, and a dozen shops opened and closed within walking
+              distance. Kenny stayed on the same corner, cutting mostly with
+              scissors, taking the first appointment of the day.
+            </p>
+            <p>
+              The shop grew by exactly one chair at a time &mdash; and only when
+              there was someone good enough to fill it. Every barber on our floor
+              came up through our own apprenticeship, which is the whole reason
+              the standard holds whichever chair you land in.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--raise section--line" aria-labelledby="tl-h">
+    <div class="shell shell--narrow">
+      <div class="sechead reveal">
+        <p class="eyebrow">The long version</p>
+        <h2 class="sechead__title" id="tl-h">Twenty-eight years, five moments</h2>
+      </div>
+      <ol class="tl">
+        {{ timeline }}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="vals2-h">
+    <div class="shell">
+      <div class="sechead reveal">
+        <p class="eyebrow">What we hold to</p>
+        <h2 class="sechead__title" id="vals2-h">How we work</h2>
+        <p class="lead sechead__lead">
+          Four things we don&rsquo;t compromise on, however busy the shop gets.
+        </p>
+      </div>
+      <div class="values">
+        {{ values }}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--raise section--line" aria-labelledby="team2-h">
+    <div class="shell">
+      <div class="sechead reveal">
+        <p class="eyebrow">The floor</p>
+        <h2 class="sechead__title" id="team2-h">Your barbers</h2>
+        <p class="lead sechead__lead">
+          Four barbers, four fixed days off, four sets of hands that learned the
+          trade in this shop. Book whoever suits &mdash; the calendar only offers
+          the days they&rsquo;re actually in.
+        </p>
+      </div>
+      {{ barber_cards }}
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="says2-h">
+    <div class="shell">
+      <div class="sechead sechead--center reveal">
+        <p class="eyebrow eyebrow--center">From the chair</p>
+        <h2 class="sechead__title" id="says2-h">What our regulars say</h2>
+      </div>
+      <div class="quotes">
+        {{ testimonials }}
+      </div>
+    </div>
+  </section>
+
+  <section class="section band" aria-labelledby="acta-h">
+    <div class="band__media">
+      <img src="./assets/img/shop-interior-1280.jpg"
+           srcset="./assets/img/shop-interior-640.jpg 640w, ./assets/img/shop-interior-1280.jpg 1280w, ./assets/img/shop-interior-1920.jpg 1920w"
+           sizes="100vw" alt="" width="1280" height="853" loading="lazy" decoding="async">
+    </div>
+    <div class="band__scrim"></div>
+    <div class="shell">
+      <h2 class="band__title" id="acta-h">Come and sit in the chair.</h2>
+      <p class="band__lead">
+        Book the barber you fancy, or leave it to us and we&rsquo;ll put you with
+        whoever&rsquo;s free.
+      </p>
+      <div class="band__cta">
+        <a class="btn btn--primary btn--lg" href="booking.html">
+          Book an appointment
+          <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--ghost btn--lg" href="services.html">See services &amp; prices</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{{> footer }}
+{{> offer-modal }}
+
+<div class="toast" data-toast role="status" aria-live="polite">
+  <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span data-toast-text></span>
+</div>
+
+<script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sigz-dev.github.io/kennys-barbering-co/sitemap.xml

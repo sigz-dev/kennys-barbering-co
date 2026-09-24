@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en-ZA" class="no-js">
+<head>
+{{> head }}
+</head>
+<body>
+<script>document.documentElement.classList.remove('no-js');</script>
+
+{{> header }}
+
+<main id="main">
+
+  <section class="pagehead">
+    <div class="shell">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span aria-hidden="true">/</span> <span>Book</span>
+      </nav>
+      <p class="eyebrow">Four quick steps</p>
+      <h1 class="pagehead__title">Book your chair</h1>
+      <p class="lead pagehead__lead">
+        Choose what you&rsquo;re after, pick your barber and a time that suits.
+        We&rsquo;ll show you exactly what&rsquo;s free, and you can drop the
+        appointment straight into your calendar at the end.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="book-h">
+    <div class="shell">
+      <h2 class="u-sr-only" id="book-h">Booking form</h2>
+
+      <noscript>
+        <div class="formnote" style="margin-bottom:2rem">
+          <div>
+            <strong style="color:var(--bone)">Online booking needs JavaScript.</strong>
+            <p style="margin-top:.5rem">
+              Give us a call on <a href="tel:{{ contact.phoneHref }}" style="color:var(--brass)">{{ contact.phoneDisplay }}</a>
+              or WhatsApp <a href="https://wa.me/{{ contact.whatsappHref }}" style="color:var(--brass)">{{ contact.whatsappDisplay }}</a>
+              and we&rsquo;ll book you in. We&rsquo;re open Tuesday to Sunday.
+            </p>
+            <p style="margin-top:.75rem">Our services and prices:</p>
+            <ul style="margin-top:.5rem;padding-left:1.25rem">
+              {{ noscript_services }}
+            </ul>
+          </div>
+        </div>
+      </noscript>
+
+      <div class="book" data-booking>
+        <div>
+          <span data-book-top></span>
+
+          <ol class="steps" data-steps aria-label="Booking progress">
+            <li class="steps__item is-current" aria-current="step">
+              <span class="steps__n">01</span><span class="steps__label">Service</span>
+            </li>
+            <li class="steps__item">
+              <span class="steps__n">02</span><span class="steps__label">Barber</span>
+            </li>
+            <li class="steps__item">
+              <span class="steps__n">03</span><span class="steps__label">Date &amp; time</span>
+            </li>
+            <li class="steps__item">
+              <span class="steps__n">04</span><span class="steps__label">Your details</span>
+            </li>
+            <li class="steps__item">
+              <span class="steps__n">05</span><span class="steps__label">Confirmed</span>
+            </li>
+          </ol>
+
+          <div class="formnote" data-promo-applied hidden style="margin-bottom:1.5rem">
+            <div>
+              <strong style="color:var(--bone)">Your first-visit discount is saved.</strong>
+              Mention code <strong style="color:var(--brass)" data-promo-value>{{ offer.code }}</strong>
+              when you arrive and we&rsquo;ll take 15% off.
+            </div>
+          </div>
+
+          <!-- ============ STEP 1 — SERVICE ============ -->
+          <section class="step is-active" data-step="1" aria-labelledby="s1-h">
+            <div class="step__head">
+              <h3 class="step__title" id="s1-h">What are you booking?</h3>
+              <p class="step__lead">
+                Pick one service. Every appointment includes a consultation and a
+                hot towel finish.
+              </p>
+            </div>
+            <div data-service-options></div>
+            <div class="stepnav">
+              <button class="btn btn--primary" type="button" data-next="1" disabled aria-disabled="true">
+                Choose your barber
+                <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </section>
+
+          <!-- ============ STEP 2 — BARBER ============ -->
+          <section class="step" data-step="2" aria-labelledby="s2-h" hidden>
+            <div class="step__head">
+              <h3 class="step__title" id="s2-h">Who&rsquo;s cutting?</h3>
+              <p class="step__lead">
+                Each barber has a fixed day off, and the calendar will only offer
+                you days they&rsquo;re actually in.
+              </p>
+            </div>
+            <div data-barber-options></div>
+            <div class="stepnav">
+              <button class="btn btn--ghost" type="button" data-back="2">Back</button>
+              <button class="btn btn--primary" type="button" data-next="2" disabled aria-disabled="true">
+                Pick a date &amp; time
+                <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </section>
+
+          <!-- ============ STEP 3 — DATE & TIME ============ -->
+          <section class="step" data-step="3" aria-labelledby="s3-h" hidden>
+            <div class="step__head">
+              <h3 class="step__title" id="s3-h">When suits you?</h3>
+              <p class="step__lead">
+                Greyed-out days are ones we&rsquo;re closed, your barber is off,
+                or everything&rsquo;s already taken.
+              </p>
+            </div>
+
+            <div class="split" style="gap:2rem;align-items:start">
+              <div data-calendar></div>
+              <div data-slots></div>
+            </div>
+
+            <div class="stepnav">
+              <button class="btn btn--ghost" type="button" data-back="3">Back</button>
+              <button class="btn btn--primary" type="button" data-next="3" disabled aria-disabled="true">
+                Add your details
+                <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </section>
+
+          <!-- ============ STEP 4 — DETAILS ============ -->
+          <section class="step" data-step="4" aria-labelledby="s4-h" hidden>
+            <div class="step__head">
+              <h3 class="step__title" id="s4-h">Who should we expect?</h3>
+              <p class="step__lead">
+                We only use these to confirm your appointment and to reach you if
+                anything changes.
+              </p>
+            </div>
+
+            <form class="formgrid formgrid--2" data-details-form novalidate>
+              <div class="field">
+                <label class="field__label" for="bk-name">
+                  Full name <span class="field__req" aria-hidden="true">*</span>
+                </label>
+                <input class="input" id="bk-name" name="name" type="text"
+                       autocomplete="name" data-validate="name" required
+                       placeholder="Sipho Mahlangu">
+                <p class="field__error" id="bk-name-err"></p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="bk-phone">
+                  Mobile number <span class="field__req" aria-hidden="true">*</span>
+                </label>
+                <input class="input" id="bk-phone" name="phone" type="tel"
+                       autocomplete="tel" inputmode="tel" data-validate="phone" required
+                       placeholder="082 555 0147">
+                <p class="field__error"></p>
+              </div>
+
+              <div class="field field--full">
+                <label class="field__label" for="bk-email">
+                  Email <span class="field__req" aria-hidden="true">*</span>
+                </label>
+                <input class="input" id="bk-email" name="email" type="email"
+                       autocomplete="email" inputmode="email" data-validate="email" required
+                       placeholder="you@example.co.za">
+                <p class="field__error"></p>
+                <p class="field__hint">Your confirmation and calendar invite go here.</p>
+              </div>
+
+              <div class="field field--full">
+                <label class="field__label" for="bk-notes">Anything we should know?</label>
+                <textarea class="textarea" id="bk-notes" name="notes"
+                          placeholder="First time in, growing out a fade, allergic to a product — anything helps."></textarea>
+                <p class="field__hint">Optional.</p>
+              </div>
+
+              <div class="field field--full">
+                <label class="checkline">
+                  <input type="checkbox" name="terms" required>
+                  <span>
+                    I&rsquo;ve read and accept the
+                    <a href="terms.html" target="_blank" rel="noopener">Terms &amp; Conditions</a>,
+                    including the 24-hour cancellation policy.
+                    <span class="field__req" aria-hidden="true">*</span>
+                  </span>
+                </label>
+                <p class="field__error"></p>
+              </div>
+
+              <div class="field--full">
+                <div class="stepnav">
+                  <button class="btn btn--ghost" type="button" data-back="4">Back</button>
+                  <button class="btn btn--primary" type="submit">
+                    Confirm booking
+                    <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </section>
+
+          <!-- ============ STEP 5 — CONFIRMATION ============ -->
+          <section class="step" data-step="5" aria-labelledby="s5-h" hidden>
+            <h3 class="u-sr-only" id="s5-h">Booking confirmed</h3>
+            <div class="confirm" data-confirm></div>
+          </section>
+        </div>
+
+        <!-- ============ SUMMARY RAIL ============ -->
+        <aside class="summary" data-summary-rail aria-label="Your booking so far">
+          <h2 class="summary__title">Your booking</h2>
+
+          <div class="summary__row">
+            <span class="summary__k">Service</span>
+            <span class="summary__v is-empty" data-summary="service">Not chosen yet</span>
+          </div>
+          <div class="summary__row">
+            <span class="summary__k">Barber</span>
+            <span class="summary__v is-empty" data-summary="barber">Not chosen yet</span>
+          </div>
+          <div class="summary__row">
+            <span class="summary__k">Date</span>
+            <span class="summary__v is-empty" data-summary="date">Not chosen yet</span>
+          </div>
+          <div class="summary__row">
+            <span class="summary__k">Time</span>
+            <span class="summary__v is-empty" data-summary="time">Not chosen yet</span>
+          </div>
+
+          <div class="summary__total">
+            <span class="summary__totalk">Total <span data-summary-duration></span></span>
+            <span class="summary__totalv" data-summary-total>&mdash;</span>
+          </div>
+
+          <p class="summary__note">
+            Payable in store by card, cash, SnapScan or Zapper. No deposit needed.
+            Free to change or cancel up to 24 hours before.
+          </p>
+        </aside>
+      </div>
+
+      <!-- ============ SAVED BOOKINGS ============ -->
+      <section class="saved" data-saved hidden aria-labelledby="saved-h">
+        <div class="sechead">
+          <p class="eyebrow">On this device</p>
+          <h2 class="sechead__title" style="font-size:var(--t-d3)" id="saved-h">
+            Your upcoming appointments
+          </h2>
+          <p class="lead sechead__lead" style="font-size:var(--t-sm)">
+            Saved in this browser so you can add them to your calendar again
+            whenever you need.
+          </p>
+        </div>
+        <div class="saved__list" data-saved-list></div>
+      </section>
+
+    </div>
+  </section>
+
+  <section class="section section--tight section--raise section--line">
+    <div class="shell">
+      <div class="values">
+        <article class="value">
+          <p class="value__num">Walk-ins</p>
+          <h3 class="value__title">No booking? Still come.</h3>
+          <p class="value__body">
+            We take walk-ins whenever a chair is free. Saturdays fill up by
+            mid-morning, so booking is the safer bet.
+          </p>
+        </article>
+        <article class="value">
+          <p class="value__num">Running late</p>
+          <h3 class="value__title">We hold for ten minutes.</h3>
+          <p class="value__body">
+            Past that we may need to shorten the service or rebook you. A quick
+            call on <a href="tel:{{ contact.phoneHref }}" style="color:var(--brass)">{{ contact.phoneDisplay }}</a> always helps.
+          </p>
+        </article>
+        <article class="value">
+          <p class="value__num">Changes</p>
+          <h3 class="value__title">Free up to 24 hours before.</h3>
+          <p class="value__body">
+            Call or WhatsApp and we&rsquo;ll move it at no charge. See the
+            <a href="terms.html" style="color:var(--brass)">full policy</a>.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{{> footer }}
+
+<div class="toast" data-toast role="status" aria-live="polite">
+  <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span data-toast-text></span>
+</div>
+
+<script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>
