@@ -174,6 +174,33 @@ await page.waitForTimeout(250);
 ok('summary shows a time range',
   (await page.locator('[data-summary="time"]').innerText()).includes('–'));
 
+// Selected controls must stay legible while the cursor is still on them —
+// a hover rule that out-specifies the selected rule hides the label entirely.
+for (const [label, sel] of [
+  ['calendar day', '.cal__day.is-selected'],
+  ['time slot', '.slot.is-selected'],
+]) {
+  await page.locator(sel).hover();
+  await page.waitForTimeout(150);
+  const legible = await page.locator(sel).evaluate((el) => {
+    const s = getComputedStyle(el);
+    const parse = (c) => (c.match(/[\d.]+/g) || []).slice(0, 3).map(Number);
+    const lum = ([r, g, b]) => {
+      const f = (v) => {
+        const x = v / 255;
+        return x <= 0.03928 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4;
+      };
+      return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b);
+    };
+    const a = lum(parse(s.color));
+    const b = lum(parse(s.backgroundColor));
+    const ratio = (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
+    return { ratio, text: el.textContent.trim() };
+  });
+  ok(`selected ${label} stays legible on hover`, legible.ratio >= 3,
+    `contrast ${legible.ratio.toFixed(2)}:1 for "${legible.text}"`);
+}
+
 const summaryTime = (await page.locator('[data-summary="time"]').innerText()).trim();
 console.log(`        selected ${chosenTime} -> summary "${summaryTime}"`);
 

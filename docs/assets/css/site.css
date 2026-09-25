@@ -1318,9 +1318,13 @@ body.is-locked { overflow: hidden; }
   transition: background var(--dur) var(--ease), border-color var(--dur) var(--ease),
     color var(--dur) var(--ease);
 }
-.cal__day:hover:not(:disabled) { border-color: var(--brass); color: var(--brass); }
+/* :not(.is-selected) matters here. Without it this rule out-specifies
+   .cal__day.is-selected (0,3,0 vs 0,2,0), so the date you just clicked renders
+   brass-on-brass and the number vanishes while the cursor is still on it. */
+.cal__day:hover:not(:disabled):not(.is-selected) { border-color: var(--brass); color: var(--brass); }
 .cal__day:disabled { color: var(--ink-line); cursor: not-allowed; text-decoration: line-through; }
 .cal__day.is-selected { background: var(--brass); color: var(--ink); font-weight: 700; border-color: var(--brass); }
+.cal__day.is-selected:hover { background: var(--brass-lift); border-color: var(--brass-lift); }
 .cal__day.is-today:not(.is-selected) { border-color: var(--ink-line); }
 .cal__day.is-today:not(.is-selected)::after {
   content: "";

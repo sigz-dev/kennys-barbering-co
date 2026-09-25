@@ -70,12 +70,26 @@ for (const vp of VIEWPORTS) {
     // Confirm every *visible* image decoded — a broken src would show as a gap.
     // Images inside display:none containers (the modal's media panel on narrow
     // screens, steps not yet shown) are correctly never fetched, so skip those.
-    const brokenImages = await page.evaluate(() =>
-      [...document.images]
-        .filter((img) => img.getClientRects().length > 0)
+    // Give slow/large images time to finish before judging them, otherwise a
+    // remote run races the decode and reports false failures.
+    const brokenImages = await page.evaluate(async () => {
+      const visible = () =>
+        [...document.images].filter((img) => img.getClientRects().length > 0);
+
+      const deadline = Date.now() + 12000;
+      while (Date.now() < deadline) {
+        const pending = visible().filter((img) => !img.complete);
+        if (!pending.length) break;
+        await Promise.race([
+          Promise.allSettled(pending.map((img) => img.decode().catch(() => {}))),
+          new Promise((r) => setTimeout(r, 750)),
+        ]);
+      }
+
+      return visible()
         .filter((img) => !img.complete || img.naturalWidth === 0)
-        .map((img) => img.currentSrc || img.src)
-    );
+        .map((img) => img.currentSrc || img.src);
+    });
     brokenImages.forEach((src) => errors.push(`image did not load: ${src}`));
 
     await page.waitForTimeout(300);
